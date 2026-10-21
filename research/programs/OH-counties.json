@@ -1,0 +1,452 @@
+{
+ "programs": [
+  "oh-dpa",
+  "oh-mtc"
+ ],
+ "title": "OHFA maximum non-target income limits (government, conventional, MTC) and purchase price limits",
+ "effective": "2026-07-01",
+ "url": "https://myohiohome.org/documents/IncomePurchasePriceLimits.pdf",
+ "default": null,
+ "rows": {
+  "Adams County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Allen County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Ashland County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Ashtabula County": {
+   "i12": 105000,
+   "i3": 120750,
+   "price": 566355
+  },
+  "Athens County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Auglaize County": {
+   "i12": 105900,
+   "i3": 121785,
+   "price": 566355
+  },
+  "Belmont County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Brown County": {
+   "i12": 109900,
+   "i3": 126385,
+   "price": 566355
+  },
+  "Butler County": {
+   "i12": 109900,
+   "i3": 126385,
+   "price": 566355
+  },
+  "Carroll County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Champaign County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Clark County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Clermont County": {
+   "i12": 109900,
+   "i3": 126385,
+   "price": 566355
+  },
+  "Clinton County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Columbiana County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Coshocton County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Crawford County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Cuyahoga County": {
+   "i12": 105000,
+   "i3": 120750,
+   "price": 566355
+  },
+  "Darke County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Defiance County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Delaware County": {
+   "i12": 111500,
+   "i3": 128225,
+   "price": 618475
+  },
+  "Erie County": {
+   "i12": 105300,
+   "i3": 121095,
+   "price": 566355
+  },
+  "Fairfield County": {
+   "i12": 111500,
+   "i3": 128225,
+   "price": 618475
+  },
+  "Fayette County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Franklin County": {
+   "i12": 111500,
+   "i3": 128225,
+   "price": 618475
+  },
+  "Fulton County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Gallia County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Geauga County": {
+   "i12": 105000,
+   "i3": 120750,
+   "price": 566355
+  },
+  "Greene County": {
+   "i12": 103000,
+   "i3": 118450,
+   "price": 566355
+  },
+  "Guernsey County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Hamilton County": {
+   "i12": 109900,
+   "i3": 126385,
+   "price": 566355
+  },
+  "Hancock County": {
+   "i12": 105900,
+   "i3": 121785,
+   "price": 566355
+  },
+  "Hardin County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Harrison County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Henry County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Highland County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Hocking County": {
+   "i12": 111500,
+   "i3": 128225,
+   "price": 618475
+  },
+  "Holmes County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Huron County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Jackson County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Jefferson County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Knox County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Lake County": {
+   "i12": 105000,
+   "i3": 120750,
+   "price": 566355
+  },
+  "Lawrence County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Licking County": {
+   "i12": 111500,
+   "i3": 128225,
+   "price": 618475
+  },
+  "Logan County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Lorain County": {
+   "i12": 105000,
+   "i3": 120750,
+   "price": 566355
+  },
+  "Lucas County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Madison County": {
+   "i12": 111500,
+   "i3": 128225,
+   "price": 618475
+  },
+  "Mahoning County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Marion County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Medina County": {
+   "i12": 105000,
+   "i3": 120750,
+   "price": 566355
+  },
+  "Meigs County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Mercer County": {
+   "i12": 102400,
+   "i3": 117760,
+   "price": 566355
+  },
+  "Miami County": {
+   "i12": 103000,
+   "i3": 118450,
+   "price": 566355
+  },
+  "Monroe County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Montgomery County": {
+   "i12": 103000,
+   "i3": 118450,
+   "price": 566355
+  },
+  "Morgan County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Morrow County": {
+   "i12": 111500,
+   "i3": 128225,
+   "price": 618475
+  },
+  "Muskingum County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Noble County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Ottawa County": {
+   "i12": 105300,
+   "i3": 121095,
+   "price": 566355
+  },
+  "Paulding County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Perry County": {
+   "i12": 111500,
+   "i3": 128225,
+   "price": 618475
+  },
+  "Pickaway County": {
+   "i12": 111500,
+   "i3": 128225,
+   "price": 618475
+  },
+  "Pike County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Portage County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Preble County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Putnam County": {
+   "i12": 108800,
+   "i3": 125120,
+   "price": 566355
+  },
+  "Richland County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Ross County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Sandusky County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Scioto County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Seneca County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Shelby County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Stark County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Summit County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Trumbull County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Tuscarawas County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Union County": {
+   "i12": 146700,
+   "i3": 168705,
+   "price": 618475
+  },
+  "Van Wert County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Vinton County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Warren County": {
+   "i12": 109900,
+   "i3": 126385,
+   "price": 566355
+  },
+  "Washington County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Wayne County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Williams County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Wood County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  },
+  "Wyandot County": {
+   "i12": 98800,
+   "i3": 113620,
+   "price": 566355
+  }
+ }
+}

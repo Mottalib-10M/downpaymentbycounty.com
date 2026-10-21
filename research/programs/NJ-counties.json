@@ -1,0 +1,138 @@
+{
+ "programs": [
+  "nj-dpa",
+  "nj-firstgen"
+ ],
+ "title": "NJHMFA First-Time Homebuyer Program statewide (non Urban Target Area) limits and DPA amount by county",
+ "effective": "2026-06-17",
+ "url": "https://www.nj.gov/dca/hmfa/lenders/docs/CoBranded_FTHB_ConsumerFactSheet.pdf",
+ "default": null,
+ "rows": {
+  "Atlantic County": {
+   "i12": 134600,
+   "i3": 154790,
+   "price": 764069,
+   "amt": 10000
+  },
+  "Burlington County": {
+   "i12": 134600,
+   "i3": 154790,
+   "price": 659386,
+   "amt": 10000
+  },
+  "Camden County": {
+   "i12": 134600,
+   "i3": 154790,
+   "price": 659386,
+   "amt": 10000
+  },
+  "Cape May County": {
+   "i12": 134600,
+   "i3": 154790,
+   "price": 764069,
+   "amt": 10000
+  },
+  "Cumberland County": {
+   "i12": 134600,
+   "i3": 154790,
+   "price": 566355,
+   "amt": 10000
+  },
+  "Gloucester County": {
+   "i12": 134600,
+   "i3": 154790,
+   "price": 659386,
+   "amt": 10000
+  },
+  "Hudson County": {
+   "i12": 134600,
+   "i3": 154790,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Salem County": {
+   "i12": 134600,
+   "i3": 154790,
+   "price": 659386,
+   "amt": 10000
+  },
+  "Warren County": {
+   "i12": 134600,
+   "i3": 154790,
+   "price": 566355,
+   "amt": 10000
+  },
+  "Essex County": {
+   "i12": 138400,
+   "i3": 159160,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Morris County": {
+   "i12": 138400,
+   "i3": 159160,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Sussex County": {
+   "i12": 138400,
+   "i3": 159160,
+   "price": 1306975,
+   "amt": 10000
+  },
+  "Union County": {
+   "i12": 138400,
+   "i3": 159160,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Bergen County": {
+   "i12": 139100,
+   "i3": 159965,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Passaic County": {
+   "i12": 139100,
+   "i3": 159965,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Mercer County": {
+   "i12": 139800,
+   "i3": 160770,
+   "price": 566355,
+   "amt": 15000
+  },
+  "Monmouth County": {
+   "i12": 140600,
+   "i3": 161690,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Ocean County": {
+   "i12": 140600,
+   "i3": 161690,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Hunterdon County": {
+   "i12": 154800,
+   "i3": 178020,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Middlesex County": {
+   "i12": 154800,
+   "i3": 178020,
+   "price": 1306975,
+   "amt": 15000
+  },
+  "Somerset County": {
+   "i12": 154800,
+   "i3": 178020,
+   "price": 1306975,
+   "amt": 15000
+  }
+ }
+}

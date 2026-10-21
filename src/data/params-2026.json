@@ -1,0 +1,107 @@
+{
+  "_lisezmoi": "Every national figure the site uses lives here, never in the code (RECETTE-SITE.md §4). State program terms live in research/programs/<ST>.json and reach the site through scripts/build-data.py. Mortgage rates live in rates.json, written by scripts/update-data.py.",
+  "year": 2026,
+  "retrieved_at": "2026-10-21",
+  "hud": {
+    "fy": 2026,
+    "effective": "2026-05-01",
+    "sizeFactors": [
+      0.7,
+      0.8,
+      0.9,
+      1,
+      1.08,
+      1.16,
+      1.24,
+      1.32
+    ]
+  },
+  "fhfa": {
+    "year": 2026,
+    "baseline": 832750,
+    "ceiling": 1249125
+  },
+  "fha": {
+    "year": 2026,
+    "floor": 541287,
+    "ceiling": 1249125,
+    "ceilingSpecial": 1873625,
+    "minDown": 3.5,
+    "minDownLowScore": 10,
+    "minScore": 500,
+    "minScore35": 580
+  },
+  "conventional": {
+    "minDown": 3
+  },
+  "mcc": {
+    "maxRate": 50,
+    "capAbove20": 2000
+  },
+  "firstTimeYears": 3,
+  "sources": {
+    "hud-il": {
+      "url": "https://www.huduser.gov/portal/datasets/il.html",
+      "label": {
+        "en": "HUD User, FY 2026 Income Limits (effective May 1, 2026)",
+        "es": "HUD User, límites de ingresos del año fiscal 2026 (vigentes desde el 1 de mayo de 2026)"
+      }
+    },
+    "hud-il-file": {
+      "url": "https://www.huduser.gov/portal/datasets/il/il26/Section8-FY26.xlsx",
+      "label": {
+        "en": "HUD FY 2026 Section 8 income limits by county and New England town (Excel)",
+        "es": "HUD, límites de ingresos de la Sección 8 del año fiscal 2026 por condado y municipio de Nueva Inglaterra (Excel)"
+      }
+    },
+    "fhfa-cll": {
+      "url": "https://www.fhfa.gov/data/conforming-loan-limit",
+      "label": {
+        "en": "FHFA, conforming loan limits 2026 by county",
+        "es": "FHFA, límites de préstamo conforme 2026 por condado"
+      }
+    },
+    "fha-ml": {
+      "url": "https://www.hud.gov/sites/dfiles/hudclips/documents/2025-23hsgml.pdf",
+      "label": {
+        "en": "HUD Mortgagee Letter 2025-23, FHA forward mortgage limits for calendar year 2026",
+        "es": "HUD, carta a prestamistas 2025-23, límites de hipotecas FHA para el año 2026"
+      }
+    },
+    "fha-file": {
+      "url": "https://www.hud.gov/pub/chums/cy2026-forward-limits.txt",
+      "label": {
+        "en": "HUD, FHA forward mortgage limits by county, calendar year 2026 (data file)",
+        "es": "HUD, límites de hipotecas FHA por condado, año 2026 (archivo de datos)"
+      }
+    },
+    "fha-handbook": {
+      "url": "https://www.hud.gov/hud-partners/single-family-lender",
+      "label": {
+        "en": "HUD Single Family Housing Policy Handbook 4000.1 (minimum required investment)",
+        "es": "HUD, manual 4000.1 de vivienda unifamiliar (inversión mínima requerida)"
+      }
+    },
+    "pmms": {
+      "url": "https://www.freddiemac.com/pmms",
+      "label": {
+        "en": "Freddie Mac, Primary Mortgage Market Survey (weekly)",
+        "es": "Freddie Mac, encuesta semanal de tasas hipotecarias (PMMS)"
+      }
+    },
+    "irs-mcc": {
+      "url": "https://www.irs.gov/pub/irs-pdf/f8396.pdf",
+      "label": {
+        "en": "IRS, Form 8396, Mortgage Interest Credit",
+        "es": "IRS, formulario 8396, crédito por intereses hipotecarios"
+      }
+    },
+    "freddie-3": {
+      "url": "https://myhome.freddiemac.com/buying/3-percent-down-payment",
+      "label": {
+        "en": "Freddie Mac, 3% down payment options (Home Possible, HomeOne)",
+        "es": "Freddie Mac, opciones con 3 % de pago inicial (Home Possible, HomeOne)"
+      }
+    }
+  }
+}

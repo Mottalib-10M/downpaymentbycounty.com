@@ -1,0 +1,75 @@
+name: Weekly data update and deploy
+
+# Every Thursday evening (Eastern time), after Freddie Mac publishes its weekly mortgage rate survey: the rate is
+# read again, next year's HUD, FHFA and FHA limit files are looked for, the updated files are committed, then the
+# site is rebuilt and published on GitHub Pages. State program terms are read by hand (CONTRIBUTING-DONNEES.md).
+on:
+  schedule:
+    - cron: "30 22 * * 4"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          npm ci --legacy-peer-deps
+          pip install openpyxl pypdf
+
+      - name: Fetch updated data (scheduled and manual runs)
+        if: github.event_name != 'push'
+        run: python3 scripts/update-data.py --yearly && python3 scripts/build-data.py
+
+      - name: Tests
+        run: npx vitest run
+
+      - name: Build
+        run: npm run build
+
+      - name: Commit updated data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data research/raw
+          git diff --cached --quiet || (git commit -m "Données du $(date -u +%F)" && git push)
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,20 @@
+{
+ "accent": "#1D5C4D",
+ "symbol": "DP",
+ "variants": [
+  {
+   "file": "og-en.png",
+   "title": "Down payment assistance\nfor your county, no email",
+   "subtitle": "HUD 2026 income limits · state programs · amount and terms · payment with and without",
+   "badge": "3,200+ counties · HUD limits effective 2026",
+   "brand": "Down Payment Aid by County"
+  },
+  {
+   "file": "og-es.png",
+   "title": "Ayuda para el pago inicial\nen su condado, sin correo",
+   "subtitle": "Límites de ingresos HUD 2026 · programas estatales · monto y condiciones · pago con y sin ayuda",
+   "badge": "Más de 3.200 condados · límites HUD 2026",
+   "brand": "Ayuda para el Pago Inicial por Condado"
+  }
+ ]
+}

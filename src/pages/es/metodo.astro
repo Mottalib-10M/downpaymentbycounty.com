@@ -1,0 +1,47 @@
+---
+/** Método: datos, reglas de la calculadora, montos, pagos, límites. Cada cifra sale del kit. */
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { KIT as K } from '../../lib/kit';
+import { srcLink, table } from '../../lib/helpers';
+import { breadcrumbSchema, webPageSchema } from '../../lib/seo';
+const lang = 'es';
+const path = route('method', lang);
+const S = K.es;
+const title = 'Método de la ayuda para el pago inicial 2026: datos y reglas';
+const description = 'Cómo se calculan las cifras de ayuda para el pago inicial 2026: límites de HUD por condado, límites FHA y FHFA, programas estatales leídos en la fuente y pagos.';
+const s = (k: string, t: string) => srcLink(k, lang, t);
+const read = K.STATES.filter((x) => x.programs > 0);
+const rows = read.flatMap((x) => K.state(x.st).programs.map((p) => [x.name, `<a href="${p.sourceUrl}" target="_blank" rel="nofollow noopener noreferrer">${p.name}</a>`, p.note ? 'texto indexado de la página oficial' : 'página o guía oficial', p.status === 'open' ? 'abierto' : 'cerrado o agotado']));
+const nAreas = K.STATES.reduce((a, x) => a + x.n, 0);
+const missing = K.STATES.flatMap((x) => K.state(x.st).counties.filter((c) => c.cll === null).map((c) => `${c.n} (${x.st})`));
+const f = K.P.hud.sizeFactors;
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: 'Método', description, path, lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Método', path }])]} breadcrumbs={[{ label: 'Método' }]}>
+  <article class="prose prose-slate max-w-none">
+    <h1>Cómo se construyen las cifras</h1>
+    <p>Cada cifra de este sitio sale de un archivo federal o de la página de una agencia estatal. Nada se copia de un prestamista, de un sitio de captación de clientes ni de otra calculadora, y nada de lo que usted escribe sale de su navegador. Esta página explica los datos, las reglas que aplica la calculadora, cómo se calculan los montos y los pagos, y lo que queda fuera. Edición del {S.day(K.P.retrieved_at)}; tasa hipotecaria del {S.day(K.RATES.date)}.</p>
+    <h2>Los archivos federales</h2>
+    <ul>
+      <li><Fragment set:html={s('hud-il', 'Límites de ingresos de HUD del año fiscal 2026')} /> (<Fragment set:html={s('hud-il-file', 'archivo por condado')} />), vigentes desde el {S.day(K.P.hud.effective)}: ingreso familiar medio para cuatro personas y límite de bajos ingresos del 80 % para hogares de una a ocho personas, en {S.n(nAreas)} condados, partes de condado y municipios de Nueva Inglaterra. Obra del gobierno federal, de dominio público.</li>
+      <li><Fragment set:html={s('fhfa-cll', 'Límites de préstamo conforme de FHFA para 2026')} />: {S.m(K.P.fhfa.baseline)} en la mayoría de los condados y hasta {S.m(K.P.fhfa.ceiling)} en las zonas caras, una vivienda.</li>
+      <li><Fragment set:html={s('fha-file', 'Límites de hipotecas FHA de HUD para 2026')} />, con <Fragment set:html={s('fha-ml', 'la carta 2025-23')} />: piso de {S.m(K.P.fha.floor)}, techo de {S.m(K.P.fha.ceiling)}, {S.m(K.P.fha.ceilingSpecial)} en Alaska y Hawái.</li>
+      <li><Fragment set:html={s('pmms', 'Encuesta semanal de Freddie Mac (PMMS)')} />: promedio a 30 años de tasa fija, {S.r(K.RATES.r30)} en la semana del {S.day(K.RATES.date)}, usado como tasa por defecto. Un programa la vuelve a leer cada jueves.</li>
+    </ul>
+    <p>{missing.length ? `Una zona de HUD no tiene límite conforme propio en el archivo de FHFA: ${missing.join(', ')}, una parte de condado que HUD publica aparte; allí la calculadora muestra "…".` : ''}</p>
+    <h2>El ingreso frente a la mediana del área</h2>
+    <p>HUD publica la mediana para una familia de cuatro. Para otros tamaños, la calculadora aplica el ajuste del propio HUD: {f.map((x, i) => `${i + 1} ${i ? 'personas' : 'persona'} ${Math.round(x * 100)} %`).join(', ')}. Su porcentaje del ingreso medio es el ingreso bruto del hogar dividido entre esa mediana ajustada. El límite del 80 % se muestra tal como lo publica HUD: puede diferir del 80 % de la mediana cuando HUD lo topa en la mediana nacional o lo sube en zonas caras.</p>
+    <h2>Los programas estatales</h2>
+    <p>En cada estado leímos las páginas de programas y las guías para prestamistas de la agencia y anotamos, programa por programa: el monto y cómo se calcula, la forma (subvención, perdonable, diferido, con cuota), el periodo de perdón, la regla de primera vivienda, el puntaje de crédito mínimo, los límites de ingreso y precio, las hipotecas con las que se combina, su estado y la frase exacta de la agencia que respalda el monto. Cuando el sitio de una agencia rechazó la lectura automática, las condiciones se tomaron del texto de sus páginas oficiales indexado por un buscador, y el programa lleva esa nota. Texas, Ohio y Nueva Jersey publican tablas por condado de límites de ingreso y precio que transcribimos completas, con controles sobre filas leídas a mano.</p>
+    <Fragment set:html={table(['Estado', 'Programa', 'Cómo se leyó', 'Estado actual'], rows, `Programas de la calculadora, leídos el ${S.day(K.P.retrieved_at)}.`, ['l', 'l', 'l', 'l'], lang)} />
+    <h2>Cómo decide la calculadora</h2>
+    <p>Un programa queda en "no cumple" cuando sus cifras rompen una regla que conocemos: ingreso por encima del límite de la agencia para su condado y tamaño de hogar, precio por encima de su tope, puntaje por debajo de su mínimo, un tipo de hipoteca que no usa, o la regla de primera vivienda (los veteranos y las zonas prioritarias suelen estar exentos, lo que dice el motivo). Queda en "confirmar con la agencia" cuando un límite se fija por condado en una tabla que no transcribimos, cuando su regla de primera vivienda depende de la hipoteca o cuando tiene una condición que no podemos verificar. Queda en "sin solicitudes ahora" cuando la agencia dice que sus fondos están reservados o su portal cerrado.</p>
+    <p>El monto se calcula como lo escribe la agencia: un porcentaje del precio o de la primera hipoteca, con su mínimo y su tope, una suma fija o el monto del condado en Nueva Jersey. La primera hipoteca es el precio menos la entrada mínima del tipo de préstamo: 3.5 % en FHA con 580 puntos o más y 10 % por debajo (<Fragment set:html={s('fha-handbook', 'manual 4000.1 de HUD')} />), 3 % en convencional (<Fragment set:html={s('freddie-3', 'Freddie Mac')} />), nada en VA y USDA. Se deja fuera la prima inicial de FHA, que a menudo se financia, lo que subestima en menos del 2 % un monto calculado sobre el préstamo. Cuando un programa ofrece 3 %, 4 % o 5 %, la calculadora muestra el más alto; el prestamista fija cuál aplica.</p>
+    <h2>Pagos</h2>
+    <p>Pago mensual = capital e intereses de la primera hipoteca a 30 años a la tasa que usted indique, con la fórmula de anualidad de siempre. Con ayuda: la misma primera hipoteca, más el recargo de tasa de la agencia cuando lo publica (0.40 punto en SONYMA), más la cuota de un segundo préstamo con pago mensual a su tasa y plazo publicados. No se incluyen impuestos, seguro de la casa ni seguro hipotecario, que dependen de la vivienda y del asegurador.</p>
+    <h2>Lo que queda fuera</h2>
+    <p>Los programas de ciudades, condados y organizaciones sin fines de lucro, salvo los que nombra la guía de una agencia estatal, que aparecen en la página del estado sin monto en la calculadora. Los límites de ahorros y la relación deuda-ingreso, que revisa el prestamista. Los límites de las zonas prioritarias, más altos que los usados aquí. Los estados cuyas agencias aún no hemos leído: reciben todas las cifras federales y ningún programa.</p>
+    <h2>Controles y actualizaciones</h2>
+    <p>Pruebas automáticas vuelven a calcular cifras conocidas antes de cada publicación: valores de HUD de condados concretos, filas de las tablas de Texas, Ohio y Nueva Jersey leídas a mano, el ejemplo de pago de MassHousing ({S.m(K.pmt(25000, 2, 15))} al mes por {S.m(25000)} a 15 años al 2 %), los calendarios de perdón y el tope del IRS para los certificados de crédito hipotecario. Un programa lee la tasa de Freddie Mac cada semana y busca los archivos federales del año siguiente; las condiciones de los programas se vuelven a leer a mano cuando una agencia anuncia un cambio.</p>
+  </article>
+</PageLayout>

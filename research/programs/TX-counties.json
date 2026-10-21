@@ -1,0 +1,376 @@
+{
+ "programs": [
+  "tx-mfth",
+  "tx-mcc"
+ ],
+ "title": "TDHCA My First Texas Home and Texas Mortgage Credit Certificate, non-targeted areas",
+ "effective": "2026-07-13",
+ "url": "https://welcomehome.tdhca.texas.gov/uploads/Limits.pdf",
+ "default": {
+  "i12": 101500,
+  "i3": 116725,
+  "price": 566354
+ },
+ "rows": {
+  "Armstrong County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Carson County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Potter County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Randall County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Andrews County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Austin County": {
+   "i12": 104000,
+   "i3": 119600,
+   "price": 566354
+  },
+  "Bastrop County": {
+   "i12": 134400,
+   "i3": 154560,
+   "price": 598019
+  },
+  "Caldwell County": {
+   "i12": 134400,
+   "i3": 154560,
+   "price": 598019
+  },
+  "Hays County": {
+   "i12": 134400,
+   "i3": 154560,
+   "price": 598019
+  },
+  "Travis County": {
+   "i12": 134400,
+   "i3": 154560,
+   "price": 598019
+  },
+  "Williamson County": {
+   "i12": 134400,
+   "i3": 154560,
+   "price": 598019
+  },
+  "Atascosa County": {
+   "i12": 104725,
+   "i3": 120434,
+   "price": 583580
+  },
+  "Blanco County": {
+   "i12": 106700,
+   "i3": 122705,
+   "price": 566354
+  },
+  "Borden County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Brazoria County": {
+   "i12": 126000,
+   "i3": 144900,
+   "price": 566354
+  },
+  "Burnet County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Cooke County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Crane County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Collin County": {
+   "i12": 121100,
+   "i3": 139265,
+   "price": 589596
+  },
+  "Dallas County": {
+   "i12": 121100,
+   "i3": 139265,
+   "price": 589596
+  },
+  "Denton County": {
+   "i12": 121100,
+   "i3": 139265,
+   "price": 589596
+  },
+  "Ellis County": {
+   "i12": 121100,
+   "i3": 139265,
+   "price": 589596
+  },
+  "Hunt County": {
+   "i12": 121100,
+   "i3": 139265,
+   "price": 589596
+  },
+  "Kaufman County": {
+   "i12": 121100,
+   "i3": 139265,
+   "price": 589596
+  },
+  "Rockwall County": {
+   "i12": 121100,
+   "i3": 139265,
+   "price": 589596
+  },
+  "Fayette County": {
+   "i12": 101500,
+   "i3": 126845,
+   "price": 566354
+  },
+  "Johnson County": {
+   "i12": 110300,
+   "i3": 126845,
+   "price": 589596
+  },
+  "Parker County": {
+   "i12": 110300,
+   "i3": 126845,
+   "price": 589596
+  },
+  "Tarrant County": {
+   "i12": 110300,
+   "i3": 126845,
+   "price": 589596
+  },
+  "Gillespie County": {
+   "i12": 109300,
+   "i3": 125695,
+   "price": 566354
+  },
+  "Glasscock County": {
+   "i12": 145920,
+   "i3": 170240,
+   "price": 850703
+  },
+  "Hartley County": {
+   "i12": 105600,
+   "i3": 121440,
+   "price": 566354
+  },
+  "Hemphill County": {
+   "i12": 114400,
+   "i3": 131560,
+   "price": 566354
+  },
+  "Hood County": {
+   "i12": 106000,
+   "i3": 121900,
+   "price": 566354
+  },
+  "Chambers County": {
+   "i12": 104000,
+   "i3": 119600,
+   "price": 566354
+  },
+  "Fort Bend County": {
+   "i12": 104000,
+   "i3": 119600,
+   "price": 566354
+  },
+  "Galveston County": {
+   "i12": 104000,
+   "i3": 119600,
+   "price": 566354
+  },
+  "Harris County": {
+   "i12": 104000,
+   "i3": 119600,
+   "price": 566354
+  },
+  "Liberty County": {
+   "i12": 104000,
+   "i3": 119600,
+   "price": 566354
+  },
+  "Montgomery County": {
+   "i12": 104000,
+   "i3": 119600,
+   "price": 566354
+  },
+  "Waller County": {
+   "i12": 104000,
+   "i3": 119600,
+   "price": 566354
+  },
+  "Jackson County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Kendall County": {
+   "i12": 139700,
+   "i3": 160655,
+   "price": 583580
+  },
+  "Kent County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "King County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Lampasas County": {
+   "i12": 106300,
+   "i3": 122245,
+   "price": 566354
+  },
+  "Lipscomb County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Loving County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Martin County": {
+   "i12": 103300,
+   "i3": 118795,
+   "price": 566354
+  },
+  "Medina County": {
+   "i12": 104725,
+   "i3": 120434,
+   "price": 583580
+  },
+  "Mitchell County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Midland County": {
+   "i12": 108900,
+   "i3": 125235,
+   "price": 566354
+  },
+  "Ector County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Oldham County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Pecos County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Reagan County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Roberts County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Irion County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Tom Green County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Bandera County": {
+   "i12": 104725,
+   "i3": 120434,
+   "price": 583580
+  },
+  "Bexar County": {
+   "i12": 104725,
+   "i3": 120434,
+   "price": 583580
+  },
+  "Comal County": {
+   "i12": 104725,
+   "i3": 120434,
+   "price": 583580
+  },
+  "Guadalupe County": {
+   "i12": 104725,
+   "i3": 120434,
+   "price": 583580
+  },
+  "Wilson County": {
+   "i12": 104725,
+   "i3": 120434,
+   "price": 583580
+  },
+  "Schleicher County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Grayson County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Somervell County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Stonewall County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Washington County": {
+   "i12": 101600,
+   "i3": 116840,
+   "price": 566354
+  },
+  "Ward County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  },
+  "Wise County": {
+   "i12": 112300,
+   "i3": 129145,
+   "price": 589596
+  },
+  "Yoakum County": {
+   "i12": 101500,
+   "i3": 116725,
+   "price": 566354
+  }
+ }
+}

@@ -1,0 +1,21 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { AUTHOR_NAME } from '../../data/site-config';
+const lang = 'en';
+---
+<PageLayout title="Editorial policy of Down Payment Aid 2026: sources, fixes" description="How the 2026 down payment assistance pages are written: federal files and agency pages only, each program term quoted, estimates labelled, no money from lenders or agents." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial policy</h1>
+    <h2>What counts as a source</h2>
+    <p>Federal files (HUD, FHFA, Freddie Mac) and the pages and guides of each state housing finance agency. A news article, a lender's blog or a lead site can point us to a change; we publish it only after reading the agency's own text. When an agency's site cannot be read, the program says so and its terms come from the agency's official pages as indexed, never from a third party.</p>
+    <h2>How a figure reaches a page</h2>
+    <p>Federal files are read by scripts that keep the year and the effective date. Program terms are written into one data file per state, with the agency's sentence and link next to each amount. Pages and calculators read those files; nobody types an amount into a page.</p>
+    <h2>Estimates</h2>
+    <p>The calculator's answer is an estimate: it says "likely fits", "check with the agency" or "does not fit", never "approved". Amounts that depend on the lender's choice are shown at their published maximum and labelled as such.</p>
+    <h2>Independence</h2>
+    <p>{AUTHOR_NAME} receives nothing from lenders, real estate agents, builders or agencies, and the pages carry no affiliate links and collect no contact details. The site is not linked to any public body and does not present itself as one.</p>
+    <h2>Corrections</h2>
+    <p>A reported error is checked against the agency's page or the federal file; if we were wrong, the data file and every page that reads it are corrected the same day. Write through the <a href={route('contact', lang)}>contact page</a>.</p>
+  </div>
+</PageLayout>

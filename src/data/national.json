@@ -1,0 +1,410 @@
+[
+ {
+  "st": "AL",
+  "name": "Alabama",
+  "n": 67,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "AK",
+  "name": "Alaska",
+  "n": 30,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "AZ",
+  "name": "Arizona",
+  "n": 15,
+  "programs": 1,
+  "agency": "Arizona Industrial Development Authority (Arizona IDA), Home Plus program",
+  "agencyUrl": "https://homeplusaz.com/"
+ },
+ {
+  "st": "AR",
+  "name": "Arkansas",
+  "n": 75,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "CA",
+  "name": "California",
+  "n": 58,
+  "programs": 2,
+  "agency": "California Housing Finance Agency (CalHFA)",
+  "agencyUrl": "https://www.calhfa.ca.gov/"
+ },
+ {
+  "st": "CO",
+  "name": "Colorado",
+  "n": 64,
+  "programs": 2,
+  "agency": "Colorado Housing and Finance Authority (CHFA)",
+  "agencyUrl": "https://www.chfainfo.com/"
+ },
+ {
+  "st": "CT",
+  "name": "Connecticut",
+  "n": 169,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "DE",
+  "name": "Delaware",
+  "n": 3,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "DC",
+  "name": "District of Columbia",
+  "n": 1,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "FL",
+  "name": "Florida",
+  "n": 67,
+  "programs": 3,
+  "agency": "Florida Housing Finance Corporation",
+  "agencyUrl": "https://www.floridahousing.org/"
+ },
+ {
+  "st": "GA",
+  "name": "Georgia",
+  "n": 159,
+  "programs": 1,
+  "agency": "Georgia Department of Community Affairs (DCA), Georgia Dream",
+  "agencyUrl": "https://www.dca.ga.gov/safe-affordable-housing/homeownership/georgia-dream"
+ },
+ {
+  "st": "HI",
+  "name": "Hawaii",
+  "n": 5,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "ID",
+  "name": "Idaho",
+  "n": 44,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "IL",
+  "name": "Illinois",
+  "n": 102,
+  "programs": 4,
+  "agency": "Illinois Housing Development Authority (IHDA)",
+  "agencyUrl": "https://www.ihda.org/"
+ },
+ {
+  "st": "IN",
+  "name": "Indiana",
+  "n": 92,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "IA",
+  "name": "Iowa",
+  "n": 99,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "KS",
+  "name": "Kansas",
+  "n": 105,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "KY",
+  "name": "Kentucky",
+  "n": 120,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "LA",
+  "name": "Louisiana",
+  "n": 64,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "ME",
+  "name": "Maine",
+  "n": 529,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "MD",
+  "name": "Maryland",
+  "n": 24,
+  "programs": 2,
+  "agency": "Maryland Department of Housing and Community Development, Maryland Mortgage Program (MMP)",
+  "agencyUrl": "https://mmp.maryland.gov/"
+ },
+ {
+  "st": "MA",
+  "name": "Massachusetts",
+  "n": 351,
+  "programs": 3,
+  "agency": "MassHousing",
+  "agencyUrl": "https://www.masshousing.com/"
+ },
+ {
+  "st": "MI",
+  "name": "Michigan",
+  "n": 83,
+  "programs": 1,
+  "agency": "Michigan State Housing Development Authority (MSHDA)",
+  "agencyUrl": "https://www.michigan.gov/mshda"
+ },
+ {
+  "st": "MN",
+  "name": "Minnesota",
+  "n": 87,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "MS",
+  "name": "Mississippi",
+  "n": 82,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "MO",
+  "name": "Missouri",
+  "n": 116,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "MT",
+  "name": "Montana",
+  "n": 56,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "NE",
+  "name": "Nebraska",
+  "n": 93,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "NV",
+  "name": "Nevada",
+  "n": 17,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "NH",
+  "name": "New Hampshire",
+  "n": 259,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "NJ",
+  "name": "New Jersey",
+  "n": 21,
+  "programs": 2,
+  "agency": "New Jersey Housing and Mortgage Finance Agency (NJHMFA)",
+  "agencyUrl": "https://www.nj.gov/dca/hmfa/"
+ },
+ {
+  "st": "NM",
+  "name": "New Mexico",
+  "n": 33,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "NY",
+  "name": "New York",
+  "n": 62,
+  "programs": 1,
+  "agency": "State of New York Mortgage Agency (SONYMA), part of NYS Homes and Community Renewal",
+  "agencyUrl": "https://hcr.ny.gov/"
+ },
+ {
+  "st": "NC",
+  "name": "North Carolina",
+  "n": 100,
+  "programs": 2,
+  "agency": "North Carolina Housing Finance Agency (NCHFA)",
+  "agencyUrl": "https://www.nchfa.com/"
+ },
+ {
+  "st": "ND",
+  "name": "North Dakota",
+  "n": 53,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "OH",
+  "name": "Ohio",
+  "n": 88,
+  "programs": 3,
+  "agency": "Ohio Housing Finance Agency (OHFA)",
+  "agencyUrl": "https://myohiohome.org/"
+ },
+ {
+  "st": "OK",
+  "name": "Oklahoma",
+  "n": 77,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "OR",
+  "name": "Oregon",
+  "n": 36,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "PA",
+  "name": "Pennsylvania",
+  "n": 67,
+  "programs": 2,
+  "agency": "Pennsylvania Housing Finance Agency (PHFA)",
+  "agencyUrl": "https://www.phfa.org/"
+ },
+ {
+  "st": "RI",
+  "name": "Rhode Island",
+  "n": 39,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "SC",
+  "name": "South Carolina",
+  "n": 46,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "SD",
+  "name": "South Dakota",
+  "n": 66,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "TN",
+  "name": "Tennessee",
+  "n": 95,
+  "programs": 2,
+  "agency": "Tennessee Housing Development Agency (THDA)",
+  "agencyUrl": "https://thda.org/"
+ },
+ {
+  "st": "TX",
+  "name": "Texas",
+  "n": 254,
+  "programs": 3,
+  "agency": "Texas Department of Housing and Community Affairs (TDHCA)",
+  "agencyUrl": "https://welcomehome.tdhca.texas.gov/"
+ },
+ {
+  "st": "UT",
+  "name": "Utah",
+  "n": 29,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "VT",
+  "name": "Vermont",
+  "n": 256,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "VA",
+  "name": "Virginia",
+  "n": 133,
+  "programs": 2,
+  "agency": "Virginia Housing",
+  "agencyUrl": "https://www.virginiahousing.com/"
+ },
+ {
+  "st": "WA",
+  "name": "Washington",
+  "n": 39,
+  "programs": 5,
+  "agency": "Washington State Housing Finance Commission (Here to Home)",
+  "agencyUrl": "https://heretohome.org/"
+ },
+ {
+  "st": "WV",
+  "name": "West Virginia",
+  "n": 55,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "WI",
+  "name": "Wisconsin",
+  "n": 72,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ },
+ {
+  "st": "WY",
+  "name": "Wyoming",
+  "n": 23,
+  "programs": 0,
+  "agency": null,
+  "agencyUrl": null
+ }
+]

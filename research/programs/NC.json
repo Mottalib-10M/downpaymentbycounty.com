@@ -1,0 +1,65 @@
+{
+ "state": "NC",
+ "agency": "North Carolina Housing Finance Agency (NCHFA)",
+ "agencyUrl": "https://www.nchfa.com/",
+ "programs": [
+  {
+   "id": "nc-homeadv",
+   "name": "NC Home Advantage Mortgage with 3% DPA",
+   "form": "forgivable",
+   "amount": {
+    "kind": "upToPctLoan",
+    "value": 3,
+    "text": "up to 3% of the first mortgage loan amount"
+   },
+   "repayment": "15-year deferred/forgiven subordinate lien: deferred for 10 years, forgiven 20% a year at the end of years 11 to 15; due only on sale or refinance before year 15",
+   "forgivenAfterYears": 15,
+   "firstTimeRequired": false,
+   "firstTimeNote": "first-time or move-up buyers",
+   "minCredit": 640,
+   "maxDti": 45,
+   "incomeLimit": {
+    "kind": "fixed",
+    "value": 158000,
+    "text": "currently $158,000 statewide"
+   },
+   "priceLimit": {
+    "kind": "none",
+    "text": "No Maximum Sales Price"
+   },
+   "education": "required if all borrowers are first-time buyers",
+   "firstMortgage": [
+    "FHA",
+    "VA",
+    "USDA",
+    "Conventional"
+   ],
+   "status": "open",
+   "sourceUrl": "https://www.nchfa.com/sites/default/files/2026-06/NCHomeAdvantageMortgageProgramGuide.pdf",
+   "sourceTitle": "NC Home Advantage Mortgage Program Guide, July 2026",
+   "quote": "The DPA is deferred for the first 10 years and forgiven by 20% each year at the end of years 11 through 15.",
+   "forgiveSchedule": "deferThenLinear"
+  },
+  {
+   "id": "nc-1st",
+   "name": "NC 1st Home Advantage Down Payment",
+   "form": "forgivable",
+   "amount": {
+    "kind": "fixed",
+    "value": 15000,
+    "text": "$15,000"
+   },
+   "repayment": "0% forgivable second, same 15-year schedule",
+   "forgivenAfterYears": 15,
+   "firstTimeRequired": true,
+   "firstTimeNote": "first-time buyers, qualifying veterans or buyers in Qualified Census Tracts",
+   "incomeLimit": {
+    "kind": "countyTable",
+    "text": "IRS and HUD limits by county and family size"
+   },
+   "status": "open",
+   "sourceUrl": "https://www.nchfa.com/home-buyers/buy-home/nc-home-advantage-mortgage",
+   "forgiveSchedule": "deferThenLinear"
+  }
+ ]
+}

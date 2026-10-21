@@ -1,0 +1,65 @@
+{
+ "state": "FL",
+ "agency": "Florida Housing Finance Corporation",
+ "agencyUrl": "https://www.floridahousing.org/",
+ "programs": [
+  {
+   "id": "fl-hth",
+   "name": "Hometown Heroes Program",
+   "form": "deferred",
+   "amount": {
+    "kind": "upToPctLoan",
+    "value": 5,
+    "min": 10000,
+    "max": 35000,
+    "text": "up to 5% of the first mortgage amount, maximum $35,000, minimum $10,000"
+   },
+   "repayment": "0% non-amortizing 30-year deferred second mortgage, not forgivable; due on sale, refinance, transfer or end of term",
+   "firstTimeRequired": true,
+   "firstTimeNote": "full-time workers of a Florida-based employer in listed occupations (health care, school staff, first responders, public safety, court, child care…)",
+   "incomeLimit": {
+    "kind": "countyTable",
+    "url": "https://www.floridahousing.org/docs/default-source/programs/homebuyers/hometown-heroes/2026-hometown-heroes-limits-rev-7-13-2026.pdf"
+   },
+   "status": "2025-2026 funds fully reserved (all $63 million as of April 17, 2026); 2026-2027 timeline not published",
+   "sourceUrl": "https://www.floridahousing.org/live-local-act/hometown-heroes-program"
+  },
+  {
+   "id": "fl-assist",
+   "name": "Florida Assist (FL Assist)",
+   "form": "deferred",
+   "amount": {
+    "kind": "upTo",
+    "value": 10000,
+    "text": "up to $10,000 on FHA, VA, USDA and Conventional loans"
+   },
+   "repayment": "0% deferred second mortgage, not forgivable, repayable on sale, refinance, transfer or satisfaction of the first mortgage",
+   "firstTimeRequired": null,
+   "status": "open",
+   "sourceUrl": "https://www.floridahousing.org/programs/homebuyer-overview-page"
+  },
+  {
+   "id": "fl-hfa-plus",
+   "name": "HFA Preferred PLUS / HFA Advantage PLUS second mortgage",
+   "form": "forgivable",
+   "amount": {
+    "kind": "choicePctLoan",
+    "values": [
+     3,
+     4,
+     5
+    ],
+    "text": "3%, 4% or 5% of the first mortgage loan amount"
+   },
+   "repayment": "forgiven at 20% a year over a 5-year term, with Florida Housing conventional HFA Preferred or HFA Advantage first mortgages",
+   "forgivenAfterYears": 5,
+   "firstTimeRequired": null,
+   "firstMortgage": [
+    "Conventional"
+   ],
+   "status": "open",
+   "sourceUrl": "https://www.floridahousing.org/programs/homebuyer-overview-page",
+   "forgiveSchedule": "linear"
+  }
+ ]
+}

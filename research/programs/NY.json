@@ -1,0 +1,37 @@
+{
+ "state": "NY",
+ "agency": "State of New York Mortgage Agency (SONYMA), part of NYS Homes and Community Renewal",
+ "agencyUrl": "https://hcr.ny.gov/",
+ "programs": [
+  {
+   "id": "ny-dpal",
+   "name": "SONYMA Down Payment Assistance Loan (DPAL)",
+   "form": "forgivable",
+   "amount": {
+    "kind": "pctPriceMinMax",
+    "value": 3,
+    "min": 3000,
+    "max": 15000,
+    "text": "the greater of $3,000 or 3% of the purchase price, up to $15,000; $1,000 minimum"
+   },
+   "repayment": "0% interest, no monthly payments, forgiven after 10 years; the amount subject to repayment drops by 1/120 each month of occupancy",
+   "forgivenAfterYears": 10,
+   "firstTimeRequired": true,
+   "firstTimeNote": "used with SONYMA first-mortgage programs (Achieving the Dream, Low Interest Rate, Homes for Veterans…); veterans and targeted areas exempt",
+   "incomeLimit": {
+    "kind": "countyTable",
+    "url": "https://hcr.ny.gov/sonyma-income-and-purchase-price-limits"
+   },
+   "priceLimit": {
+    "kind": "countyTable",
+    "url": "https://hcr.ny.gov/sonyma-income-and-purchase-price-limits"
+   },
+   "rateNote": "first mortgages with a DPAL carry a rate 0.40 point higher",
+   "status": "open",
+   "sourceUrl": "https://hcr.ny.gov/down-payment-assistant-loan-dpal",
+   "note": "hcr.ny.gov blocked to scripts (Cloudflare); terms from the official pages' indexed text",
+   "rateAdd": 0.4,
+   "forgiveSchedule": "linear"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { AUTHOR_NAME } from '../../data/site-config';
+const lang = 'es';
+---
+<PageLayout title="Política editorial de Ayuda para el Pago Inicial 2026" description="Cómo se escriben las páginas de ayuda para el pago inicial 2026: archivos federales y páginas de agencias, cada condición citada, estimaciones señaladas, sin dinero de prestamistas." lang={lang} noindex={true} breadcrumbs={[{ label: 'Política editorial' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Política editorial</h1>
+    <h2>Qué cuenta como fuente</h2>
+    <p>Los archivos federales (HUD, FHFA, Freddie Mac) y las páginas y guías de cada agencia estatal de vivienda. Un artículo de prensa, el blog de un prestamista o un sitio de captación pueden avisarnos de un cambio; lo publicamos solo después de leer el texto de la agencia. Cuando el sitio de una agencia no se puede leer, el programa lo dice y sus condiciones vienen de las páginas oficiales de la agencia tal como están indexadas, nunca de un tercero.</p>
+    <h2>Cómo llega una cifra a una página</h2>
+    <p>Los archivos federales los leen programas que guardan el año y la fecha de vigencia. Las condiciones de los programas se escriben en un archivo de datos por estado, con la frase y el enlace de la agencia junto a cada monto. Las páginas y las calculadoras leen esos archivos; nadie escribe un monto a mano en una página.</p>
+    <h2>Estimaciones</h2>
+    <p>La respuesta de la calculadora es una estimación: dice "probablemente sí", "confirmar con la agencia" o "no cumple", nunca "aprobado". Los montos que dependen de la elección del prestamista se muestran en su máximo publicado y se indican como tales.</p>
+    <h2>Independencia</h2>
+    <p>{AUTHOR_NAME} no recibe nada de prestamistas, agentes inmobiliarios, constructoras ni agencias; las páginas no llevan enlaces de afiliados ni recogen datos de contacto. El sitio no está vinculado a ningún organismo público y no se presenta como tal.</p>
+    <h2>Correcciones</h2>
+    <p>Un error señalado se comprueba en la página de la agencia o en el archivo federal; si nos equivocamos, el archivo de datos y todas las páginas que lo leen se corrigen el mismo día. Escriba desde la <a href={route('contact', lang)}>página de contacto</a>.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,47 @@
+---
+/** Method: data, rules of the calculator, amounts, payments, limits. Every figure from the kit. */
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route } from '../../i18n/routes';
+import { KIT as K } from '../../lib/kit';
+import { srcLink, table } from '../../lib/helpers';
+import { breadcrumbSchema, webPageSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('method', lang);
+const E = K.en;
+const title = 'Down payment assistance method 2026: data, rules, limits';
+const description = 'How the 2026 down payment assistance figures are built: HUD county limits, FHA and FHFA loan limits, state program terms read at the source, payments and limits.';
+const s = (k: string, t: string) => srcLink(k, lang, t);
+const read = K.STATES.filter((x) => x.programs > 0);
+const rows = read.flatMap((x) => K.state(x.st).programs.map((p) => [x.name, `<a href="${p.sourceUrl}" target="_blank" rel="nofollow noopener noreferrer">${p.name}</a>`, p.note ? 'indexed text of the official page' : 'official page or guide', p.status === 'open' ? 'open' : 'closed or reserved']));
+const nAreas = K.STATES.reduce((a, x) => a + x.n, 0);
+const missing = K.STATES.flatMap((x) => K.state(x.st).counties.filter((c) => c.cll === null).map((c) => `${c.n} (${x.st})`));
+const f = K.P.hud.sizeFactors;
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: 'Method', description, path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Method', path }])]} breadcrumbs={[{ label: 'Method' }]}>
+  <article class="prose prose-slate max-w-none">
+    <h1>How the figures are built</h1>
+    <p>Every figure on this site starts from a federal file or from a state agency's own page. Nothing is copied from a lender, a lead site or another calculator, and nothing you type leaves your browser. This page sets out the data, the rules the calculator applies, how amounts and payments are computed, and what is left out. Edition of {E.day(K.P.retrieved_at)}; mortgage rate of {E.day(K.RATES.date)}.</p>
+    <h2>The federal files</h2>
+    <ul>
+      <li><Fragment set:html={s('hud-il', 'HUD fiscal year 2026 income limits')} /> (<Fragment set:html={s('hud-il-file', 'county file')} />), effective {E.day(K.P.hud.effective)}: median family income for four people and the 80% low-income limit for one to eight people, for {E.n(nAreas)} counties, county parts and New England towns. US government work, public domain.</li>
+      <li><Fragment set:html={s('fhfa-cll', 'FHFA 2026 conforming loan limits')} />: {E.m(K.P.fhfa.baseline)} in most counties, up to {E.m(K.P.fhfa.ceiling)} in high-cost areas, one unit.</li>
+      <li><Fragment set:html={s('fha-file', 'HUD FHA forward mortgage limits for 2026')} />, with <Fragment set:html={s('fha-ml', 'Mortgagee Letter 2025-23')} />: floor {E.m(K.P.fha.floor)}, ceiling {E.m(K.P.fha.ceiling)}, {E.m(K.P.fha.ceilingSpecial)} in Alaska and Hawaii.</li>
+      <li><Fragment set:html={s('pmms', 'Freddie Mac Primary Mortgage Market Survey')} />: the 30-year fixed average, {E.r(K.RATES.r30)} in the week of {E.day(K.RATES.date)}, used as the default rate. Read again every Thursday by a script.</li>
+    </ul>
+    <p>{missing.length ? `One HUD area has no conforming limit of its own in the FHFA file: ${missing.join(', ')}, a part of a county that HUD lists separately; the calculator shows "…" there.` : ''}</p>
+    <h2>Income against the area median</h2>
+    <p>HUD publishes the median for a family of four. For other sizes the calculator applies HUD's own adjustment: {f.map((x, i) => `${i + 1} ${i ? 'people' : 'person'} ${Math.round(x * 100)}%`).join(', ')}. Your share of area median income is your gross household income divided by that adjusted median. HUD's published 80% limit is shown as HUD prints it: it can differ from 80% of the median where HUD caps it at the national median or raises it in high-cost areas.</p>
+    <h2>The state programs</h2>
+    <p>For each state, we read the agency's program pages and lender guides and wrote down, for every program: the amount and how it is computed, the form (grant, forgivable, deferred, repayable), the forgiveness period, the first-time buyer rule, the minimum credit score, the income and price limits, the first mortgages it pairs with, its status, and the exact sentence of the agency that supports the amount. When an agency's site refused automated reading, the terms were taken from the text of its official pages as indexed by a search engine, and the program carries that note. Texas, Ohio and New Jersey publish county tables of income and price limits that we transcribed in full, with checks against rows read by eye.</p>
+    <Fragment set:html={table(['State', 'Program', 'How it was read', 'Status'], rows, `Programs in the calculator, read on ${E.day(K.P.retrieved_at)}.`, ['l', 'l', 'l', 'l'], lang)} />
+    <h2>How the calculator decides</h2>
+    <p>A program is marked "does not fit" when your figures break a rule we hold: income above the agency's limit for your county and household size, price above its limit, a credit score below its floor, a first mortgage type it does not use, or a first-time requirement you do not meet (veterans and targeted areas are exempt in most programs, which the reason says). It is marked "check with the agency" when a limit is set county by county in a table we have not transcribed, when its first-time rule depends on the first mortgage, or when it has a condition we cannot test. It is marked "not taking applications" when the agency says its funds are reserved or its portal closed.</p>
+    <p>The amount is computed as the agency writes it: a percentage of the price or of the first mortgage, with its floor and cap, a fixed sum, the county amount in New Jersey. The first mortgage is the price minus the minimum down payment of the loan type: 3.5% for FHA with a score of 580 or more and 10% below (<Fragment set:html={s('fha-handbook', 'HUD Handbook 4000.1')} />), 3% conventional (<Fragment set:html={s('freddie-3', 'Freddie Mac')} />), nothing for VA and USDA. The FHA upfront premium, often financed, is left out, which understates a 5%-of-loan amount by under 2%. When a program offers 3%, 4% or 5%, the calculator shows the highest; the lender sets which applies.</p>
+    <h2>Payments</h2>
+    <p>Monthly payment = principal and interest on the first mortgage over 30 years at the rate you enter, the standard annuity formula. With help: the same first mortgage, plus the agency's rate add-on when it publishes one (0.40 point for SONYMA), plus the monthly payment of a repayable second loan at its published rate and term. Taxes, insurance and mortgage insurance are not included, because they depend on the home and the insurer.</p>
+    <h2>What is left out</h2>
+    <p>City, county and nonprofit programs, except those a state agency's guide names, which appear on the state page without an amount in the calculator. Assets limits and debt-to-income ratios, which the lender checks. Targeted-area limits, higher than the ones used here. States whose agency pages we have not read yet: they get every federal figure and no program.</p>
+    <h2>Checks and updates</h2>
+    <p>Automated tests rebuild known figures before each release: HUD values for named counties, the Texas, Ohio and New Jersey table rows read by eye, MassHousing's own payment example ({E.m(K.pmt(25000, 2, 15))} a month for {E.m(25000)} over 15 years at 2%), the forgiveness schedules and the IRS cap on mortgage credit certificates. A script reads the Freddie Mac rate every week and looks for next year's federal files; program terms are read again by hand when an agency announces a change.</p>
+  </article>
+</PageLayout>

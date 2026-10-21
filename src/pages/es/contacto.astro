@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'es';
+const path = route('contact', lang);
+const description = 'Escriba al editor sobre un límite de condado 2026, un programa estatal que cambió o una página de agencia que no leímos. Solo correo, sin formulario ni cuenta.';
+---
+<PageLayout title="Contacto, Ayuda para el Pago Inicial 2026: errores y datos" description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contacto', description, path, lang })]} breadcrumbs={[{ label: 'Contacto' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contacto</h1>
+    <p>Escriba a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. No hay formulario, ni teléfono, ni cuenta: una sola dirección, leída por quienes mantienen las calculadoras al día.</p>
+    <h2>Mensajes que ayudan</h2>
+    <ul>
+      <li>Un programa cuyo monto, límite o estado cambió: indique el estado, el programa y el enlace a la página o guía de la agencia.</li>
+      <li>Una cifra de condado distinta de la del archivo de HUD, FHFA o FHA.</li>
+      <li>Un programa de una agencia estatal, un condado o una ciudad que aún no hemos leído.</li>
+      <li>Insertar la calculadora en un sitio de asesoría de vivienda o comunitario: el código está en la <a href={route('widget', lang)}>página para insertar</a>.</li>
+    </ul>
+    <h2>Lo que no podemos hacer</h2>
+    <p>No podemos decirle si le aprobarán, reservar fondos ni recomendar un prestamista. No somos una agencia: las solicitudes pasan por un prestamista aprobado por la agencia de vivienda de su estado, y los asesores de vivienda aprobados por HUD pueden revisar su caso gratis o a bajo costo.</p>
+    <h2>Editor</h2>
+    <LegalIdentity lang={lang} />
+  </div>
+</PageLayout>

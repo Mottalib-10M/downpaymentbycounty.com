@@ -1,0 +1,27 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+const lang = 'en';
+const path = route('contact', lang);
+const description = 'Write to the publisher about a 2026 county limit, a state program that changed or an agency page we missed. Email only, no form, no account and no lender behind it.';
+---
+<PageLayout title="Contact Down Payment Aid by County 2026: errors, programs" description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: 'Contact', description, path, lang })]} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contact</h1>
+    <p>Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. There is no form, no phone line and no account: one address, read by the people who keep the calculators up to date.</p>
+    <h2>Messages that help</h2>
+    <ul>
+      <li>A program whose amount, limit or status has changed: give the state, the program and the link to the agency's page or guide.</li>
+      <li>A county figure that differs from the HUD, FHFA or FHA file.</li>
+      <li>A state agency, county or city program we have not read yet.</li>
+      <li>Embedding the calculator on a housing counseling or community site: the code is on the <a href={route('widget', lang)}>embed page</a>.</li>
+    </ul>
+    <h2>What we cannot do</h2>
+    <p>We cannot tell you whether you will be approved, reserve funds or recommend a lender. We are not an agency: applications go through a lender approved by your state's housing finance agency, and HUD-approved housing counselors can review your case for free or at low cost.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+  </div>
+</PageLayout>

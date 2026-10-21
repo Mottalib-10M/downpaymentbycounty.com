@@ -1,0 +1,32 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { route } from '../../i18n/routes';
+import { AUTHOR_NAME, AUTHOR_DESC, CONTACT_EMAIL } from '../../data/site-config';
+import { srcLink } from '../../lib/helpers';
+import { HOME } from '../../content/home';
+import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
+const lang = 'es';
+const path = route('about', lang);
+const title = 'Ayuda para el pago inicial 2026: quién publica este sitio';
+const description = 'Este sitio lo publica Radif Partners: límites de HUD 2026 de cada condado, programas estatales leídos en la fuente, sin pedir correo y sin cobrar a prestamistas.';
+const s = (k: string, t: string) => srcLink(k, lang, t);
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Acerca de', path }])]} breadcrumbs={[{ label: 'Acerca de' }]}>
+  <article class="prose prose-slate max-w-none">
+    <h1>Acerca de Ayuda para el Pago Inicial por Condado</h1>
+    <p>{AUTHOR_DESC.es}</p>
+    <h2>Por qué existe este sitio</h2>
+    <p>Quien busca ayuda para el pago inicial encuentra sobre todo tres tipos de páginas. Formularios que prometen "programas a su medida" y solo los muestran después de que usted entrega su nombre, su correo y su teléfono. Artículos de prestamistas y corredores que enumeran programas en términos generales, dicen que "hay límites de ingresos" sin dar la cifra de su condado y terminan con un botón para precalificar. Y las páginas de las agencias, exactas pero cada una sobre un solo estado, a menudo en PDF y en inglés, sin convertir las reglas en un monto y un pago para su hogar.</p>
+    <p><strong>{HOME.es.valeur}</strong></p>
+    <h2>Quién lo publica</h2>
+    <p>El sitio lo publica {AUTHOR_NAME}, una empresa que construye calculadoras con datos públicos. No es un organismo público y no tiene relación con HUD, FHA, FHFA, ninguna agencia estatal de vivienda, ningún prestamista ni ninguna inmobiliaria. No cobra comisiones, no recomienda a nadie, no pide nombre ni correo y no lleva enlaces de afiliados.</p>
+    <LegalIdentity lang={lang} />
+    <h2>De dónde salen las cifras</h2>
+    <p><Fragment set:html={s('hud-il', 'Límites de ingresos de HUD del año fiscal 2026')} /> para las medianas por condado y los límites del 80 %, <Fragment set:html={s('fhfa-cll', 'límites de préstamo conforme de FHFA para 2026')} />, <Fragment set:html={s('fha-ml', 'la carta 2025-23 de HUD')} /> para los límites FHA, <Fragment set:html={s('pmms', 'la encuesta semanal de tasas de Freddie Mac')} /> y las páginas y guías de cada agencia estatal de vivienda, leídas una por una. La <a href={route('method', lang)}>página de método</a> explica cada regla; la <a href={route('editorial', lang)}>política editorial</a> explica cómo se corrigen los errores.</p>
+    <h2>Lo que el sitio no hace</h2>
+    <p>No recibe solicitudes ni puede reservar fondos. No sabe si el dinero anual de un programa se agotó hoy: muestra el estado que publicó la agencia. No puede leer sus comprobantes de ingresos ni su informe de crédito. Su respuesta es una estimación que un prestamista aprobado confirma o corrige.</p>
+    <h2>Escríbanos</h2>
+    <p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, para señalar un error, un programa que cambió o una página de agencia que no hemos leído.</p>
+  </article>
+</PageLayout>

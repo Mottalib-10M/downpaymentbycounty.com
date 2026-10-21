@@ -1,0 +1,71 @@
+{
+ "state": "OH",
+ "agency": "Ohio Housing Finance Agency (OHFA)",
+ "agencyUrl": "https://myohiohome.org/",
+ "programs": [
+  {
+   "id": "oh-dpa",
+   "name": "OHFA Down Payment Assistance",
+   "form": "forgivable",
+   "amount": {
+    "kind": "pctPriceByLoan",
+    "conventional": 3,
+    "government": 3.5,
+    "text": "3% of the purchase price with a conventional loan or 3.5% with an FHA, VA or USDA loan"
+   },
+   "repayment": "forgiven after seven years; if you sell within seven years you repay all of the assistance",
+   "forgivenAfterYears": 7,
+   "firstTimeRequired": true,
+   "firstTimeNote": "Next Home program for repeat buyers",
+   "minCredit": 640,
+   "minCreditNote": "640 conventional, USDA, VA; 650 FHA",
+   "incomeLimit": {
+    "kind": "countyTable",
+    "text": "non-target limits by county, 1-2 persons and 3 or more, effective July 1, 2026",
+    "url": "https://myohiohome.org/documents/IncomePurchasePriceLimits.pdf"
+   },
+   "priceLimit": {
+    "kind": "countyTable",
+    "url": "https://myohiohome.org/documents/IncomePurchasePriceLimits.pdf"
+   },
+   "education": true,
+   "firstMortgage": [
+    "FHA",
+    "VA",
+    "USDA",
+    "Conventional"
+   ],
+   "status": "open",
+   "sourceUrl": "https://myohiohome.org/downpaymentassistance.aspx",
+   "quote": "OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price... This assistance is forgiven after seven years.",
+   "forgiveSchedule": "cliff"
+  },
+  {
+   "id": "oh-grads",
+   "name": "Grants for Grads",
+   "form": "forgivable",
+   "amount": {
+    "kind": "pctPriceByLoan",
+    "conventional": 3,
+    "government": 3.5
+   },
+   "repayment": "forgiven after five years as long as you remain in Ohio",
+   "forgivenAfterYears": 5,
+   "firstTimeNote": "recent graduates (degree in the last 48 months)",
+   "status": "open",
+   "sourceUrl": "https://ohiohome.org/partners/faqs.aspx",
+   "forgiveSchedule": "cliff"
+  },
+  {
+   "id": "oh-mtc",
+   "name": "OHFA Mortgage Tax Credit",
+   "form": "mcc",
+   "amount": {
+    "kind": "text",
+    "text": "federal tax credit on a portion of mortgage interest, up to $2,000 a year"
+   },
+   "status": "open",
+   "sourceUrl": "https://ohiohome.org/partners/faqs.aspx"
+  }
+ ]
+}

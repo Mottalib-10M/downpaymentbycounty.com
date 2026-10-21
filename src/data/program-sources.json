@@ -1,0 +1,436 @@
+{
+ "agency-AZ": {
+  "url": "https://homeplusaz.com/",
+  "label": {
+   "en": "Arizona Industrial Development Authority (Arizona IDA), Home Plus program",
+   "es": "Arizona Industrial Development Authority (Arizona IDA), Home Plus program"
+  }
+ },
+ "prog-az-homeplus": {
+  "url": "https://homeplusaz.com/home-plus-dpa/",
+  "label": {
+   "en": "Home Plus Down Payment Assistance",
+   "es": "Home Plus Down Payment Assistance"
+  }
+ },
+ "agency-CA": {
+  "url": "https://www.calhfa.ca.gov/",
+  "label": {
+   "en": "California Housing Finance Agency (CalHFA)",
+   "es": "California Housing Finance Agency (CalHFA)"
+  }
+ },
+ "prog-ca-myhome": {
+  "url": "https://www.calhfa.ca.gov/homebuyer/programs/myhome.htm",
+  "label": {
+   "en": "MyHome Assistance Program",
+   "es": "MyHome Assistance Program"
+  }
+ },
+ "prog-ca-dfa": {
+  "url": "https://www.calhfa.ca.gov/dream/",
+  "label": {
+   "en": "California Dream For All Shared Appreciation Loan",
+   "es": "California Dream For All Shared Appreciation Loan"
+  }
+ },
+ "agency-CO": {
+  "url": "https://www.chfainfo.com/",
+  "label": {
+   "en": "Colorado Housing and Finance Authority (CHFA)",
+   "es": "Colorado Housing and Finance Authority (CHFA)"
+  }
+ },
+ "prog-co-grant": {
+  "url": "https://www.chfainfo.com/homeownership/faqs",
+  "label": {
+   "en": "CHFA Down Payment Assistance Grant",
+   "es": "CHFA Down Payment Assistance Grant"
+  }
+ },
+ "prog-co-second": {
+  "url": "https://www.chfainfo.com/homeownership/faqs",
+  "label": {
+   "en": "CHFA Down Payment Assistance Second Mortgage Loan",
+   "es": "CHFA Down Payment Assistance Second Mortgage Loan"
+  }
+ },
+ "agency-FL": {
+  "url": "https://www.floridahousing.org/",
+  "label": {
+   "en": "Florida Housing Finance Corporation",
+   "es": "Florida Housing Finance Corporation"
+  }
+ },
+ "prog-fl-hth": {
+  "url": "https://www.floridahousing.org/live-local-act/hometown-heroes-program",
+  "label": {
+   "en": "Hometown Heroes Program",
+   "es": "Hometown Heroes Program"
+  }
+ },
+ "prog-fl-assist": {
+  "url": "https://www.floridahousing.org/programs/homebuyer-overview-page",
+  "label": {
+   "en": "Florida Assist (FL Assist)",
+   "es": "Florida Assist (FL Assist)"
+  }
+ },
+ "prog-fl-hfa-plus": {
+  "url": "https://www.floridahousing.org/programs/homebuyer-overview-page",
+  "label": {
+   "en": "HFA Preferred PLUS / HFA Advantage PLUS second mortgage",
+   "es": "HFA Preferred PLUS / HFA Advantage PLUS second mortgage"
+  }
+ },
+ "agency-GA": {
+  "url": "https://www.dca.ga.gov/safe-affordable-housing/homeownership/georgia-dream",
+  "label": {
+   "en": "Georgia Department of Community Affairs (DCA), Georgia Dream",
+   "es": "Georgia Department of Community Affairs (DCA), Georgia Dream"
+  }
+ },
+ "prog-ga-dream": {
+  "url": "https://www.dca.ga.gov/safe-affordable-housing/homeownership/georgia-dream/homebuyers",
+  "label": {
+   "en": "Georgia Dream Homeownership Program",
+   "es": "Georgia Dream Homeownership Program"
+  }
+ },
+ "agency-IL": {
+  "url": "https://www.ihda.org/",
+  "label": {
+   "en": "Illinois Housing Development Authority (IHDA)",
+   "es": "Illinois Housing Development Authority (IHDA)"
+  }
+ },
+ "prog-il-home": {
+  "url": "https://www.ihda.org/my-home/getting-an-ihda-loan/",
+  "label": {
+   "en": "IHDA Access Home",
+   "es": "IHDA Access Home"
+  }
+ },
+ "prog-il-forgivable": {
+  "url": "https://www.ihda.org/my-home/getting-an-ihda-loan/",
+  "label": {
+   "en": "IHDA Access Forgivable",
+   "es": "IHDA Access Forgivable"
+  }
+ },
+ "prog-il-deferred": {
+  "url": "https://www.ihda.org/my-home/getting-an-ihda-loan/",
+  "label": {
+   "en": "IHDA Access Deferred",
+   "es": "IHDA Access Deferred"
+  }
+ },
+ "prog-il-repayable": {
+  "url": "https://www.ihda.org/my-home/getting-an-ihda-loan/",
+  "label": {
+   "en": "IHDA Access Repayable",
+   "es": "IHDA Access Repayable"
+  }
+ },
+ "agency-MA": {
+  "url": "https://www.masshousing.com/",
+  "label": {
+   "en": "MassHousing",
+   "es": "MassHousing"
+  }
+ },
+ "prog-ma-dpa1": {
+  "url": "https://www.masshousing.com/home-ownership/homebuyers/down-payment-assistance",
+  "label": {
+   "en": "MassHousing Down Payment Assistance, Option 1 (deferred)",
+   "es": "MassHousing Down Payment Assistance, Option 1 (deferred)"
+  }
+ },
+ "prog-ma-dpa2": {
+  "url": "https://www.masshousing.com/home-ownership/homebuyers/down-payment-assistance",
+  "label": {
+   "en": "MassHousing Down Payment Assistance, Option 2 (2%, 15 years)",
+   "es": "MassHousing Down Payment Assistance, Option 2 (2%, 15 years)"
+  }
+ },
+ "prog-ma-dpa3": {
+  "url": "https://www.masshousing.com/home-ownership/homebuyers/down-payment-assistance",
+  "label": {
+   "en": "MassHousing Down Payment Assistance, Option 3 (3%, 15 years)",
+   "es": "MassHousing Down Payment Assistance, Option 3 (3%, 15 years)"
+  }
+ },
+ "agency-MD": {
+  "url": "https://mmp.maryland.gov/",
+  "label": {
+   "en": "Maryland Department of Housing and Community Development, Maryland Mortgage Program (MMP)",
+   "es": "Maryland Department of Housing and Community Development, Maryland Mortgage Program (MMP)"
+  }
+ },
+ "prog-md-pct": {
+  "url": "https://mmp.maryland.gov/home-loans/mmp-1st-time-advantage",
+  "label": {
+   "en": "MMP 1st Time Advantage 3%, 4% or 5%",
+   "es": "MMP 1st Time Advantage 3%, 4% or 5%"
+  }
+ },
+ "prog-md-6000": {
+  "url": "https://mmp.maryland.gov/home-loans/mmp-1st-time-advantage",
+  "label": {
+   "en": "MMP 1st Time Advantage 6000",
+   "es": "MMP 1st Time Advantage 6000"
+  }
+ },
+ "agency-MI": {
+  "url": "https://www.michigan.gov/mshda",
+  "label": {
+   "en": "Michigan State Housing Development Authority (MSHDA)",
+   "es": "Michigan State Housing Development Authority (MSHDA)"
+  }
+ },
+ "prog-mi-10k": {
+  "url": "https://www.michigan.gov/mshda/pathway-to-housing/mi-home-loan",
+  "label": {
+   "en": "MSHDA MI 10K DPA Loan",
+   "es": "MSHDA MI 10K DPA Loan"
+  }
+ },
+ "agency-NC": {
+  "url": "https://www.nchfa.com/",
+  "label": {
+   "en": "North Carolina Housing Finance Agency (NCHFA)",
+   "es": "North Carolina Housing Finance Agency (NCHFA)"
+  }
+ },
+ "prog-nc-homeadv": {
+  "url": "https://www.nchfa.com/sites/default/files/2026-06/NCHomeAdvantageMortgageProgramGuide.pdf",
+  "label": {
+   "en": "NC Home Advantage Mortgage Program Guide, July 2026",
+   "es": "NC Home Advantage Mortgage Program Guide, July 2026"
+  }
+ },
+ "prog-nc-1st": {
+  "url": "https://www.nchfa.com/home-buyers/buy-home/nc-home-advantage-mortgage",
+  "label": {
+   "en": "NC 1st Home Advantage Down Payment",
+   "es": "NC 1st Home Advantage Down Payment"
+  }
+ },
+ "agency-NJ": {
+  "url": "https://www.nj.gov/dca/hmfa/",
+  "label": {
+   "en": "New Jersey Housing and Mortgage Finance Agency (NJHMFA)",
+   "es": "New Jersey Housing and Mortgage Finance Agency (NJHMFA)"
+  }
+ },
+ "prog-nj-dpa": {
+  "url": "https://www.nj.gov/dca/hmfa/lenders/docs/CoBranded_FTHB_ConsumerFactSheet.pdf",
+  "label": {
+   "en": "NJHMFA consumer fact sheet, updated June 17, 2026",
+   "es": "NJHMFA consumer fact sheet, updated June 17, 2026"
+  }
+ },
+ "prog-nj-firstgen": {
+  "url": "https://www.nj.gov/dca/hmfa/homebuyers-and-renters/homebuyers/",
+  "label": {
+   "en": "NJHMFA First Generation Down Payment Assistance",
+   "es": "NJHMFA First Generation Down Payment Assistance"
+  }
+ },
+ "limits-NJ": {
+  "url": "https://www.nj.gov/dca/hmfa/lenders/docs/CoBranded_FTHB_ConsumerFactSheet.pdf",
+  "label": {
+   "en": "NJHMFA First-Time Homebuyer Program statewide (non Urban Target Area) limits and DPA amount by county",
+   "es": "NJHMFA First-Time Homebuyer Program statewide (non Urban Target Area) limits and DPA amount by county"
+  }
+ },
+ "agency-NY": {
+  "url": "https://hcr.ny.gov/",
+  "label": {
+   "en": "State of New York Mortgage Agency (SONYMA), part of NYS Homes and Community Renewal",
+   "es": "State of New York Mortgage Agency (SONYMA), part of NYS Homes and Community Renewal"
+  }
+ },
+ "prog-ny-dpal": {
+  "url": "https://hcr.ny.gov/down-payment-assistant-loan-dpal",
+  "label": {
+   "en": "SONYMA Down Payment Assistance Loan (DPAL)",
+   "es": "SONYMA Down Payment Assistance Loan (DPAL)"
+  }
+ },
+ "agency-OH": {
+  "url": "https://myohiohome.org/",
+  "label": {
+   "en": "Ohio Housing Finance Agency (OHFA)",
+   "es": "Ohio Housing Finance Agency (OHFA)"
+  }
+ },
+ "prog-oh-dpa": {
+  "url": "https://myohiohome.org/downpaymentassistance.aspx",
+  "label": {
+   "en": "OHFA Down Payment Assistance",
+   "es": "OHFA Down Payment Assistance"
+  }
+ },
+ "prog-oh-grads": {
+  "url": "https://ohiohome.org/partners/faqs.aspx",
+  "label": {
+   "en": "Grants for Grads",
+   "es": "Grants for Grads"
+  }
+ },
+ "prog-oh-mtc": {
+  "url": "https://ohiohome.org/partners/faqs.aspx",
+  "label": {
+   "en": "OHFA Mortgage Tax Credit",
+   "es": "OHFA Mortgage Tax Credit"
+  }
+ },
+ "limits-OH": {
+  "url": "https://myohiohome.org/documents/IncomePurchasePriceLimits.pdf",
+  "label": {
+   "en": "OHFA maximum non-target income limits (government, conventional, MTC) and purchase price limits",
+   "es": "OHFA maximum non-target income limits (government, conventional, MTC) and purchase price limits"
+  }
+ },
+ "agency-PA": {
+  "url": "https://www.phfa.org/",
+  "label": {
+   "en": "Pennsylvania Housing Finance Agency (PHFA)",
+   "es": "Pennsylvania Housing Finance Agency (PHFA)"
+  }
+ },
+ "prog-pa-kfit": {
+  "url": "https://www.phfa.org/programs/assistance/kfit.aspx",
+  "label": {
+   "en": "PHFA K-FIT (Keystone Forgivable in Ten Years)",
+   "es": "PHFA K-FIT (Keystone Forgivable in Ten Years)"
+  }
+ },
+ "prog-pa-kaal": {
+  "url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
+  "label": {
+   "en": "PHFA Keystone Advantage Assistance Loan",
+   "es": "PHFA Keystone Advantage Assistance Loan"
+  }
+ },
+ "agency-TN": {
+  "url": "https://thda.org/",
+  "label": {
+   "en": "Tennessee Housing Development Agency (THDA)",
+   "es": "Tennessee Housing Development Agency (THDA)"
+  }
+ },
+ "prog-tn-deferred": {
+  "url": "https://thda.org/homebuyers/down-payment-assistance/",
+  "label": {
+   "en": "THDA Great Choice Plus, deferred option",
+   "es": "THDA Great Choice Plus, deferred option"
+  }
+ },
+ "prog-tn-amortizing": {
+  "url": "https://thda.org/homebuyers/down-payment-assistance/",
+  "label": {
+   "en": "THDA Great Choice Plus, amortizing option",
+   "es": "THDA Great Choice Plus, amortizing option"
+  }
+ },
+ "agency-TX": {
+  "url": "https://welcomehome.tdhca.texas.gov/",
+  "label": {
+   "en": "Texas Department of Housing and Community Affairs (TDHCA)",
+   "es": "Texas Department of Housing and Community Affairs (TDHCA)"
+  }
+ },
+ "prog-tx-mfth": {
+  "url": "https://welcomehome.tdhca.texas.gov/uploads/Lender-Guide.pdf",
+  "label": {
+   "en": "TDHCA Lender Guide, effective August 26, 2026",
+   "es": "TDHCA Lender Guide, effective August 26, 2026"
+  }
+ },
+ "prog-tx-mcth": {
+  "url": "https://welcomehome.tdhca.texas.gov/uploads/Lender-Guide.pdf",
+  "label": {
+   "en": "My Choice Texas Home",
+   "es": "My Choice Texas Home"
+  }
+ },
+ "prog-tx-mcc": {
+  "url": "https://welcomehome.tdhca.texas.gov/uploads/Limits.pdf",
+  "label": {
+   "en": "Texas Mortgage Credit Certificate",
+   "es": "Texas Mortgage Credit Certificate"
+  }
+ },
+ "limits-TX": {
+  "url": "https://welcomehome.tdhca.texas.gov/uploads/Limits.pdf",
+  "label": {
+   "en": "TDHCA My First Texas Home and Texas Mortgage Credit Certificate, non-targeted areas",
+   "es": "TDHCA My First Texas Home and Texas Mortgage Credit Certificate, non-targeted areas"
+  }
+ },
+ "agency-VA": {
+  "url": "https://www.virginiahousing.com/",
+  "label": {
+   "en": "Virginia Housing",
+   "es": "Virginia Housing"
+  }
+ },
+ "prog-va-grant": {
+  "url": "https://www.virginiahousing.com/homebuyers/down-payment-assistance-grant",
+  "label": {
+   "en": "Virginia Housing Down Payment Assistance Grant",
+   "es": "Virginia Housing Down Payment Assistance Grant"
+  }
+ },
+ "prog-va-plus": {
+  "url": "https://www.virginiahousing.com/en/homebuyers/plus-second-mortgage",
+  "label": {
+   "en": "Virginia Housing Plus Second Mortgage",
+   "es": "Virginia Housing Plus Second Mortgage"
+  }
+ },
+ "agency-WA": {
+  "url": "https://heretohome.org/",
+  "label": {
+   "en": "Washington State Housing Finance Commission (Here to Home)",
+   "es": "Washington State Housing Finance Commission (Here to Home)"
+  }
+ },
+ "prog-wa-homeadv": {
+  "url": "https://heretohome.org/downpayment-assistance/",
+  "label": {
+   "en": "Home Advantage Downpayment Assistance",
+   "es": "Home Advantage Downpayment Assistance"
+  }
+ },
+ "prog-wa-needs": {
+  "url": "https://heretohome.org/downpayment-assistance/",
+  "label": {
+   "en": "Home Advantage Needs-Based DPA",
+   "es": "Home Advantage Needs-Based DPA"
+  }
+ },
+ "prog-wa-housekey": {
+  "url": "https://heretohome.org/downpayment-assistance/",
+  "label": {
+   "en": "House Key Opportunity DPA",
+   "es": "House Key Opportunity DPA"
+  }
+ },
+ "prog-wa-covenant": {
+  "url": "https://heretohome.org/downpayment-assistance/",
+  "label": {
+   "en": "Covenant Homeownership Program",
+   "es": "Covenant Homeownership Program"
+  }
+ },
+ "prog-wa-veterans": {
+  "url": "https://heretohome.org/downpayment-assistance/",
+  "label": {
+   "en": "Veterans Downpayment Assistance Program",
+   "es": "Veterans Downpayment Assistance Program"
+  }
+ }
+}

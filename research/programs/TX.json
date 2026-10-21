@@ -1,0 +1,105 @@
+{
+ "state": "TX",
+ "agency": "Texas Department of Housing and Community Affairs (TDHCA)",
+ "agencyUrl": "https://welcomehome.tdhca.texas.gov/",
+ "programs": [
+  {
+   "id": "tx-mfth",
+   "name": "My First Texas Home",
+   "form": "deferred",
+   "alt": "forgivable",
+   "amount": {
+    "kind": "upToPctLoan",
+    "value": 5
+   },
+   "repayment": "0% interest; 30-year deferred repayable second lien due on sale, refinance, transfer or payoff of the first mortgage, or a 3-year deferred forgivable second lien forgiven at the 3rd anniversary if current and still the primary residence",
+   "forgivenAfterYears": 3,
+   "firstTimeRequired": true,
+   "firstTimeNote": "also open to qualified veterans and to buyers in targeted areas",
+   "minCredit": 620,
+   "maxDti": "follow AUS findings; 45% for manual underwriting",
+   "incomeLimit": {
+    "kind": "countyTable",
+    "text": "100% AMFI for 1-2 persons, 115% AMFI for 3 or more (120%/140% in targeted areas); balance of state $101,500 / $116,725, effective July 13, 2026",
+    "url": "https://welcomehome.tdhca.texas.gov/uploads/Limits.pdf"
+   },
+   "priceLimit": {
+    "kind": "countyTable",
+    "text": "balance of state $566,354 (1 unit), effective July 13, 2026"
+   },
+   "education": true,
+   "firstMortgage": [
+    "FHA",
+    "VA",
+    "USDA",
+    "Conventional"
+   ],
+   "status": "open",
+   "sourceUrl": "https://welcomehome.tdhca.texas.gov/uploads/Lender-Guide.pdf",
+   "sourceTitle": "TDHCA Lender Guide, effective August 26, 2026",
+   "quote": "a 30-year deferred repayable second lien; a 3-year deferred forgivable second lien option both of which include down payment and closing cost assistance in an amount up to 5% of the mortgage loan",
+   "forgiveSchedule": "cliff"
+  },
+  {
+   "id": "tx-mcth",
+   "name": "My Choice Texas Home",
+   "form": "deferred",
+   "alt": "forgivable",
+   "amount": {
+    "kind": "upToPctLoan",
+    "value": 5
+   },
+   "repayment": "same second-lien terms as My First Texas Home: 0%, 30-year deferred repayable or 3-year deferred forgivable",
+   "forgivenAfterYears": 3,
+   "firstTimeRequired": false,
+   "minCredit": 620,
+   "incomeLimit": {
+    "kind": "countyTable",
+    "text": "higher limits than My First Texas Home; Fannie Mae / Freddie Mac 80% and 170% AMI county limits for conventional; no purchase price limit (follow agency guidelines)",
+    "url": "https://welcomehome.tdhca.texas.gov/uploads/Limits.pdf"
+   },
+   "priceLimit": {
+    "kind": "none",
+    "text": "No Purchase Price Limits Apply"
+   },
+   "education": true,
+   "firstMortgage": [
+    "FHA",
+    "VA",
+    "USDA",
+    "Conventional"
+   ],
+   "status": "open",
+   "sourceUrl": "https://welcomehome.tdhca.texas.gov/uploads/Lender-Guide.pdf",
+   "quote": "There is no First-Time Homebuyer Requirement on the My Choice Texas Home option but must meet Income Limits per the applicable, Texas County",
+   "forgiveSchedule": "cliff"
+  },
+  {
+   "id": "tx-mcc",
+   "name": "Texas Mortgage Credit Certificate",
+   "form": "mcc",
+   "amount": {
+    "kind": "text",
+    "text": "federal tax credit on part of the mortgage interest each year"
+   },
+   "incomeLimit": {
+    "kind": "countyTable",
+    "text": "same table as My First Texas Home",
+    "url": "https://welcomehome.tdhca.texas.gov/uploads/Limits.pdf"
+   },
+   "status": "open",
+   "sourceUrl": "https://welcomehome.tdhca.texas.gov/uploads/Limits.pdf"
+  }
+ ],
+ "local": [
+  {
+   "name": "Harris County HFC, Capital Area HFC and City of McKinney gift funds",
+   "text": "one-time gift funds usable with a TDHCA option in specified counties; example in the guide: $10,000 Capital Area Housing Partnership gift in Bastrop County",
+   "url": "https://welcomehome.tdhca.texas.gov/additional-grant-down-payment-assistance"
+  }
+ ],
+ "blocked": [
+  "tdhca.texas.gov (Akamai 403)",
+  "tsahc.org (Cloudflare challenge): TSAHC Homes for Texas Heroes / Home Sweet Texas not recorded"
+ ]
+}
