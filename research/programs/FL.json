@@ -21,8 +21,11 @@
     "kind": "countyTable",
     "url": "https://www.floridahousing.org/docs/default-source/programs/homebuyers/hometown-heroes/2026-hometown-heroes-limits-rev-7-13-2026.pdf"
    },
-   "status": "2025-2026 funds fully reserved (all $63 million as of April 17, 2026); 2026-2027 timeline not published",
-   "sourceUrl": "https://www.floridahousing.org/live-local-act/hometown-heroes-program"
+   "status": "open",
+   "sourceUrl": "https://www.floridahousing.org/live-local-act/hometown-heroes-program",
+   "condition": "full-time worker in a listed occupation; 2026 funds to confirm with a participating lender",
+   "note": "2025-2026 funds fully committed on February 20, 2026 (Florida Housing press release of February 27, 2026); Florida Housing then posted a 2026 Hometown Heroes lender guide (June 30, 2026) with income limits effective for reservations as of May 6, 2026 and a revision dated July 13, 2026; the agency does not publish how much of the 2026 money remains",
+   "statusUrl": "https://www.floridahousing.org/press/press-releases/releases/2026"
   },
   {
    "id": "fl-assist",
@@ -36,7 +39,16 @@
    "repayment": "0% deferred second mortgage, not forgivable, repayable on sale, refinance, transfer or satisfaction of the first mortgage",
    "firstTimeRequired": null,
    "status": "open",
-   "sourceUrl": "https://www.floridahousing.org/programs/homebuyer-overview-page"
+   "sourceUrl": "https://www.floridahousing.org/programs/homebuyer-overview-page",
+   "incomeLimit": {
+    "kind": "countyTable",
+    "text": "Florida Housing first mortgage income limits by county",
+    "url": "https://www.floridahousing.org/programs/homebuyer-overview-page"
+   },
+   "priceLimit": {
+    "kind": "countyTable",
+    "url": "https://www.floridahousing.org/programs/homebuyer-overview-page"
+   }
   },
   {
    "id": "fl-hfa-plus",
@@ -59,7 +71,16 @@
    ],
    "status": "open",
    "sourceUrl": "https://www.floridahousing.org/programs/homebuyer-overview-page",
-   "forgiveSchedule": "linear"
+   "forgiveSchedule": "linear",
+   "incomeLimit": {
+    "kind": "countyTable",
+    "text": "Florida Housing first mortgage income limits by county",
+    "url": "https://www.floridahousing.org/programs/homebuyer-overview-page"
+   },
+   "priceLimit": {
+    "kind": "countyTable",
+    "url": "https://www.floridahousing.org/programs/homebuyer-overview-page"
+   }
   }
  ]
 }

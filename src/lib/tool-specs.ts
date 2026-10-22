@@ -173,7 +173,7 @@ export const SPECS: Record<string, (l: Lang, arg?: Args) => ToolSpec> = {
           rows: [
             [T(l, 'Conforming loan limit (FHFA)', 'Límite de préstamo conforme (FHFA)'), cll ? m(cll, l) : '…', cll],
             [T(l, 'FHA limit', 'Límite FHA'), fha ? m(fha, l) : '…', fha],
-            [T(l, 'Highest price an FHA loan covers at 3.5% down', 'Precio máximo con FHA y 3,5 % de entrada'), m(fha / (1 - P.fha.minDown / 100), l)],
+            [T(l, 'Highest price an FHA loan covers at 3.5% down', 'Precio máximo con FHA y 3.5 % de entrada'), m(fha / (1 - P.fha.minDown / 100), l)],
             [T(l, 'Highest price a conforming loan covers at 3% down', 'Precio máximo con préstamo conforme y 3 % de entrada'), m(cll / (1 - P.conventional.minDown / 100), l)],
             [T(l, 'National FHA floor · ceiling', 'Piso · techo nacional FHA'), `${m(P.fha.floor, l)} · ${m(P.fha.ceiling, l)}`],
           ],
@@ -188,7 +188,7 @@ export const SPECS: Record<string, (l: Lang, arg?: Args) => ToolSpec> = {
     inputs: [
       priceField(l, Number(arg.p ?? 300000)),
       { id: 'a', label: T(l, 'Assistance amount', 'Monto de la ayuda'), def: Number(arg.a ?? 10000), unit: '$', max: 500000 },
-      { kind: 'choice', id: 'k', label: T(l, 'How it is repaid', 'Cómo se devuelve'), def: String(arg.k ?? 'deferred'), options: [{ value: 'deferred', label: T(l, 'Deferred', 'Diferido') }, { value: 'grant', label: T(l, 'Forgiven', 'Perdonado') }, { value: 'amortizing', label: T(l, 'Monthly', 'Mensual') }] },
+      { kind: 'choice', id: 'k', label: T(l, 'How it is repaid', 'Cómo se devuelve'), def: String(arg.k ?? 'deferred'), options: [{ value: 'deferred', label: T(l, 'Deferred', 'Diferido') }, { value: 'grant', label: T(l, 'Forgiven', 'Perdón') }, { value: 'amortizing', label: T(l, 'Monthly', 'Mensual') }] },
       rateField(l, false),
       { id: 'd', label: T(l, 'Down payment', 'Pago inicial'), def: Number(arg.d ?? 3.5), unit: '%', max: 100, decimals: 1, adv: true },
       { id: 'ar', label: T(l, 'Rate of the assistance loan', 'Tasa del préstamo de ayuda'), def: Number(arg.ar ?? 0), unit: '%', max: 20, decimals: 2, adv: true },
@@ -268,7 +268,7 @@ export const SPECS: Record<string, (l: Lang, arg?: Args) => ToolSpec> = {
           ...all.map(([name, k]) => [`${name}: ${formatDecimal(minDownPct(k, cs), 1, l)}${l === 'es' ? ' ' : ''}%`, m(price * minDownPct(k, cs) / 100, l), price * minDownPct(k, cs) / 100] as [string, string, number]),
           [T(l, 'Monthly principal and interest', 'Capital e intereses al mes'), m(pmt(loan, n(v, 'r'), 30), l)],
         ],
-        note: T(l, 'FHA: 3.5% with a score of 580 or more, 10% from 500 to 579 (HUD Handbook 4000.1). Conventional: 3% with Fannie Mae and Freddie Mac low down payment loans. VA and USDA: no minimum down payment. Closing costs come on top.', 'FHA: 3,5 % con puntaje de 580 o más, 10 % de 500 a 579 (manual 4000.1 de HUD). Convencional: 3 % con los préstamos de entrada baja de Fannie Mae y Freddie Mac. VA y USDA: sin entrada mínima. Los gastos de cierre van aparte.'),
+        note: T(l, 'FHA: 3.5% with a score of 580 or more, 10% from 500 to 579 (HUD Handbook 4000.1). Conventional: 3% with Fannie Mae and Freddie Mac low down payment loans. VA and USDA: no minimum down payment. Closing costs come on top.', 'FHA: 3.5 % con puntaje de 580 o más, 10 % de 500 a 579 (manual 4000.1 de HUD). Convencional: 3 % con los préstamos de entrada baja de Fannie Mae y Freddie Mac. VA y USDA: sin entrada mínima. Los gastos de cierre van aparte.'),
       };
     },
   }),

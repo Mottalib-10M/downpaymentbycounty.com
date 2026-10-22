@@ -27,8 +27,8 @@ const related = page.related.filter((id) => hasRoute(id, lang)).map((id) => ({ h
 const sources = sourceList(page.sources.includes('hud-il') ? page.sources : [...page.sources, 'hud-il'], lang);
 const tag = lang === 'es' ? 'es-US' : 'en-US';
 const read = lang === 'es'
-  ? `límites de HUD 2026 vigentes desde el ${displayDate(P.hud.effective, tag)} · tasa de Freddie Mac del ${displayDate(RATES.date, tag)} · programas leídos el ${displayDate(P.retrieved_at, tag)}`
-  : `HUD 2026 limits effective ${displayDate(P.hud.effective, tag)} · Freddie Mac rate of ${displayDate(RATES.date, tag)} · programs read on ${displayDate(P.retrieved_at, tag)}`;
+  ? `actualizado: límites de HUD 2026 vigentes desde el ${displayDate(P.hud.effective, tag)} · tasa de Freddie Mac del ${displayDate(RATES.date, tag)} · programas leídos el ${displayDate(P.retrieved_at, tag)}`
+  : `updated: HUD 2026 limits effective ${displayDate(P.hud.effective, tag)} · Freddie Mac rate of ${displayDate(RATES.date, tag)} · programs read on ${displayDate(P.retrieved_at, tag)}`;
 ---
 <PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={x.faqs} related={related} sources={sources} breadcrumbs={[{ label: group.label[lang] }, { label: x.nav }]}>
   <article>

@@ -79,7 +79,9 @@ describe('engine', () => {
     const nj = st('NJ'), njd = nj.programs.find((p) => p.id === 'nj-dpa')!;
     expect(evaluate(njd, nj, ctx('NJ', 'Bergen County', { loan: 'conv' })).verdict).toBe('no');
     const fl = st('FL');
-    expect(evaluate(fl.programs.find((p) => p.id === 'fl-hth')!, fl, ctx('FL', 'Miami-Dade County')).verdict).toBe('closed');
+    expect(evaluate(fl.programs.find((p) => p.id === 'fl-hth')!, fl, ctx('FL', 'Miami-Dade County')).verdict).toBe('check');
+    const ca = st('CA');
+    expect(evaluate(ca.programs.find((p) => p.id === 'ca-dfa')!, ca, ctx('CA', 'Los Angeles County')).verdict).toBe('closed');
   });
   it('stacking: New Jersey First Generation adds to the county amount', () => {
     const s = summarize(st('NJ'), ctx('NJ', 'Bergen County', { income: 100000, price: 400000 }));

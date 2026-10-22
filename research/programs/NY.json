@@ -20,11 +20,11 @@
    "firstTimeNote": "used with SONYMA first-mortgage programs (Achieving the Dream, Low Interest Rate, Homes for Veterans…); veterans and targeted areas exempt",
    "incomeLimit": {
     "kind": "countyTable",
-    "url": "https://hcr.ny.gov/sonyma-income-and-purchase-price-limits"
+    "url": "https://hcr.ny.gov/sonyma-programs"
    },
    "priceLimit": {
     "kind": "countyTable",
-    "url": "https://hcr.ny.gov/sonyma-income-and-purchase-price-limits"
+    "url": "https://hcr.ny.gov/sonyma-programs"
    },
    "rateNote": "first mortgages with a DPAL carry a rate 0.40 point higher",
    "status": "open",

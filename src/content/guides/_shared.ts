@@ -54,3 +54,13 @@ export function exampleTable(h: Helpers, e: Example, caption: string): string {
     sm.evals.map((x) => [x.p.name, V[x.verdict], x.amount ? h.m(x.amount) : '', x.reasons.map((r) => reasonText(r, h.lang)).join('; ')]), caption, ['l', 'l', 'r', 'l']);
 }
 export const STATES_READ = K.STATES.filter((s) => s.programs > 0).map((s) => s.st);
+
+/** The agency's own county table (TX, OH, NJ): income limits for 1-2 and 3+ people, price limit, amount. */
+export function agencyLimitsTable(h: Helpers, st: string, names: string[]): string {
+  const cl = K.state(st).countyLimits;
+  if (!cl) return '';
+  const hasAmt = names.some((n) => cl.rows[n]?.amt);
+  const rows = names.map((n) => { const r = cl.rows[n] ?? cl.default ?? {}; return [n, r.i12 ? h.m(r.i12) : '', r.i3 ? h.m(r.i3) : '', r.price ? h.m(r.price) : '', ...(hasAmt ? [r.amt ? h.m(r.amt) : ''] : [])]; });
+  return h.table([T(h, 'County', 'Condado'), T(h, 'Income limit, 1-2 people', 'Límite de ingresos, 1-2 personas'), T(h, 'Income limit, 3+ people', 'Límite de ingresos, 3 o más'), T(h, 'Price limit', 'Tope de precio'), ...(hasAmt ? [T(h, 'Assistance', 'Ayuda')] : [])], rows,
+    T(h, `${cl.title}, effective ${h.day(cl.effective)}.`, `${cl.title}, vigente desde el ${h.day(cl.effective)}.`), ['l', 'r', 'r', 'r', 'r']);
+}

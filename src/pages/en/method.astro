@@ -9,7 +9,7 @@ const lang = 'en';
 const path = route('method', lang);
 const E = K.en;
 const title = 'Down payment assistance method 2026: data, rules, limits';
-const description = 'How the 2026 down payment assistance figures are built: HUD county limits, FHA and FHFA loan limits, state program terms read at the source, payments and limits.';
+const description = 'How the 2026 down payment assistance figures are built: HUD county limits, FHA and FHFA loan limits, state program terms read at the source, payments, limits.';
 const s = (k: string, t: string) => srcLink(k, lang, t);
 const read = K.STATES.filter((x) => x.programs > 0);
 const rows = read.flatMap((x) => K.state(x.st).programs.map((p) => [x.name, `<a href="${p.sourceUrl}" target="_blank" rel="nofollow noopener noreferrer">${p.name}</a>`, p.note ? 'indexed text of the official page' : 'official page or guide', p.status === 'open' ? 'open' : 'closed or reserved']));

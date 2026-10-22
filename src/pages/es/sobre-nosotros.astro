@@ -9,7 +9,7 @@ import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
 const lang = 'es';
 const path = route('about', lang);
 const title = 'Ayuda para el pago inicial 2026: quién publica este sitio';
-const description = 'Este sitio lo publica Radif Partners: límites de HUD 2026 de cada condado, programas estatales leídos en la fuente, sin pedir correo y sin cobrar a prestamistas.';
+const description = 'Este sitio lo publica Radif Partners: límites de HUD 2026 de cada condado, programas estatales leídos en la fuente, sin pedir correo ni cobrar a prestamistas.';
 const s = (k: string, t: string) => srcLink(k, lang, t);
 ---
 <PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: 'Inicio', path: route('home', lang) }, { name: 'Acerca de', path }])]} breadcrumbs={[{ label: 'Acerca de' }]}>
@@ -17,7 +17,7 @@ const s = (k: string, t: string) => srcLink(k, lang, t);
     <h1>Acerca de Ayuda para el Pago Inicial por Condado</h1>
     <p>{AUTHOR_DESC.es}</p>
     <h2>Por qué existe este sitio</h2>
-    <p>Quien busca ayuda para el pago inicial encuentra sobre todo tres tipos de páginas. Formularios que prometen "programas a su medida" y solo los muestran después de que usted entrega su nombre, su correo y su teléfono. Artículos de prestamistas y corredores que enumeran programas en términos generales, dicen que "hay límites de ingresos" sin dar la cifra de su condado y terminan con un botón para precalificar. Y las páginas de las agencias, exactas pero cada una sobre un solo estado, a menudo en PDF y en inglés, sin convertir las reglas en un monto y un pago para su hogar.</p>
+    <p>Este sitio da una respuesta para un hogar concreto: elija un condado, indique un ingreso, el tamaño del hogar y un precio, y verá qué programas estatales le corresponden, cuánto paga cada uno, el efectivo que todavía debe llevar y el pago mensual con y sin la ayuda. Lee las reglas de cada agencia estatal una por una, deja el texto de la agencia junto a cada cifra y fecha cada número que muestra, para que el comprador pueda confirmarlo con un prestamista aprobado el mismo día.</p>
     <p><strong>{HOME.es.valeur}</strong></p>
     <h2>Quién lo publica</h2>
     <p>El sitio lo publica {AUTHOR_NAME}, una empresa que construye calculadoras con datos públicos. No es un organismo público y no tiene relación con HUD, FHA, FHFA, ninguna agencia estatal de vivienda, ningún prestamista ni ninguna inmobiliaria. No cobra comisiones, no recomienda a nadie, no pide nombre ni correo y no lleva enlaces de afiliados.</p>

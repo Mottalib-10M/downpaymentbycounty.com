@@ -37,7 +37,7 @@ const rows = K.STATES.map((s) => {
   <header class="mb-4">
     <h1 class="text-[1.7rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">{x.h1}</h1>
     <p class="mt-2 text-base text-navy-700 sm:text-lg">{x.intro}</p>
-    <p class="mt-1 text-sm text-navy-600"><a href={route('method', lang)} class="underline">{es ? 'Método y fuentes' : 'Method and sources'}</a> · <a href={route('about', lang)} class="underline">{es ? 'Quién publica este sitio' : 'Who publishes this site'}</a></p>
+    <p class="mt-1 text-sm text-navy-600"><a href={route('method', lang)} class="underline">{es ? 'Método y fuentes' : 'Method and sources'}</a> · <a href={route('about', lang)} class="underline">{es ? 'Quién publica este sitio' : 'Who publishes this site'}</a> · {es ? `Actualizado el ${K.es.day(K.P.retrieved_at)}, tasa de Freddie Mac del ${K.es.day(K.RATES.date)}` : `Updated ${K.en.day(K.P.retrieved_at)}, Freddie Mac rate of ${K.en.day(K.RATES.date)}`}</p>
   </header>
   <div data-outil data-chrome><Tool kind="dpa" lang={lang} arg={x.toolArg} idPrefix="home" /></div>
   <dl data-chrome class="limits my-6 text-sm">

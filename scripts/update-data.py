@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh the data that changes on its own (run by .github/workflows/update-data.yml, every Thursday evening).
+"""Refresh the data that changes on its own (run by .github/workflows/deploy.yml, every Thursday evening).
 
   weekly   Freddie Mac PMMS history  -> src/data/rates.json (30-year and 15-year fixed, week of the survey)
   yearly   HUD income limits, FHFA conforming limits, FHA limits for the next year: when the file for the

@@ -52,6 +52,7 @@
    "repayment": "forgiven after five years as long as you remain in Ohio",
    "forgivenAfterYears": 5,
    "firstTimeNote": "recent graduates (degree in the last 48 months)",
+   "condition": "recent graduate",
    "status": "open",
    "sourceUrl": "https://ohiohome.org/partners/faqs.aspx",
    "forgiveSchedule": "cliff"
