@@ -17,10 +17,10 @@ function table(h: Helpers) {
 export default defineGuide({
   id: 'how-much-down', group: 'tools', order: 6, tool: 'down', toolArg: { p: 300000, l: 'fha', cs: 680 },
   related: ['payment', 'loan-limits', 'requirements', 'programs', 'grants', 'ca'],
-  sources: ['fha-handbook', 'freddie-3', 'pmms', 'fha-ml'],
+  sources: ['fha-handbook', 'freddie-3', 'va-purchase', 'usda-3555', 'pmms', 'fha-ml'],
   en: {
     slug: 'how-much-down-payment-for-a-house', nav: 'How much down payment', card: 'The minimum by loan type, FHA, conventional, VA and USDA, in dollars',
-    title: 'Down Payment for a House 2026: How Much You Really Need',
+    title: 'First-Time Home Buyer Down Payment 2026: How Much You Need',
     description: 'How much down payment for a house in 2026: 3.5% with FHA, 3% conventional, zero with VA or USDA, in dollars for your price, and what state assistance covers.',
     h1: 'How much down payment you need for a house',
     intro: 'Enter the price, the loan type and your credit score: the minimum down payment in dollars, for all four loan types, and the monthly payment.',
@@ -29,6 +29,7 @@ export default defineGuide({
       { q: 'Is 20% down still necessary to buy a house?', a: 'No. Twenty percent is the level at which a conventional loan carries no private mortgage insurance, not a minimum. Most first-time buyers put down far less, using FHA at 3.5% or a conventional loan at 3%. The cost of putting less down is the monthly mortgage insurance, which the calculator does not include.' },
       { q: 'Can down payment assistance cover the whole down payment?', a: `Often, yes. Programs paying 3.5% to 5% of the price cover the FHA minimum entirely; Illinois Access Home pays 6% up to ${E.m(15000)}. The agency still usually asks a small contribution of your own, and closing costs come on top. The main calculator shows the cash left to bring.` },
       { q: 'Does a higher credit score lower the minimum down payment?', a: `For FHA, yes, once: from ${F.minScore35} the minimum falls from ${F.minDownLowScore}% to ${F.minDown}%. Above that the minimum does not change, but a higher score lowers the rate and the mortgage insurance, and opens the state programs, which ask for 620 to 660.` },
+      { q: 'Can a first-time buyer get a loan with no down payment?', a: 'Yes, in three ways. A VA purchase loan needs no down payment as long as the price does not exceed the appraised value. A loan backed by a USDA guarantee can reach the appraised market value in eligible rural areas, under a moderate income limit. Otherwise an FHA or 3% loan paired with state assistance large enough to pay the minimum brings the cash close to zero.' },
     ],
     body: (h) => `
 <h2>The minimum at five prices</h2>
@@ -43,6 +44,8 @@ ${h.mini('down', { p: ['p', 'l'], d: { p: 400000, l: 'conv', cs: 720 }, t: 'Your
 <p>FHA and conventional loans accept gifts from family toward the down payment, documented by a gift letter and a paper trail of the transfer. A gift and state assistance can usually be combined. What lenders refuse is an undocumented deposit shortly before the application, so move the money early and keep the bank statements.</p>
 <h2>Waiting to save more, in numbers</h2>
 <p>Each extra year of saving is a year of rent paid and a year in which prices and rates can move either way. On a ${h.m(300000)} home, going from ${F.minDown}% to 20% down means saving ${h.m(60000 - d(300000, 'fha'))} more. The calculator above shows how the monthly payment changes with the loan type, so you can weigh that payment against the time it would take you to reach 20%. Assistance shortens the wait further, since it pays the minimum for you.</p>
+<h2>A loan with no down payment</h2>
+<p>Two federal loans ask for nothing down. VA states it plainly: ${h.src('va-purchase', 'no down payment as long as the sales price is not higher than the appraised value')}, for eligible veterans, service members and some surviving spouses, and without monthly mortgage insurance. A loan backed by a USDA guarantee may reach the appraised market value of the home under ${h.src('usda-3555', '7 CFR 3555.103')}, in areas USDA classes as rural and for households under its moderate income limit. For everyone else, zero down is built rather than given: an FHA loan at ${F.minDown}% or a conventional loan at ${C.minDown}% plus state help of 3% to 5% covers the minimum. On a ${h.m(300000)} home with FHA, help of ${h.m(d(300000, 'fha'))} or more leaves only closing costs to bring, and many programs cover part of those too.</p>
 `,
   },
   es: {
@@ -56,6 +59,7 @@ ${h.mini('down', { p: ['p', 'l'], d: { p: 400000, l: 'conv', cs: 720 }, t: 'Your
       { q: '¿Sigue siendo necesario el 20 % de entrada?', a: 'No. El 20 % es el nivel a partir del cual un préstamo convencional no lleva seguro hipotecario privado, no un mínimo. La mayoría de los compradores de primera vivienda da mucho menos, con FHA al 3.5 % o un convencional al 3 %. El costo de dar menos es el seguro hipotecario mensual, que la calculadora no incluye.' },
       { q: '¿Puede la ayuda cubrir todo el pago inicial?', a: `A menudo, sí. Los programas que pagan del 3.5 % al 5 % del precio cubren todo el mínimo de FHA; Access Home de Illinois paga el 6 % hasta ${S.m(15000)}. La agencia suele pedir igualmente un pequeño aporte propio, y los gastos de cierre se suman. La calculadora principal muestra el efectivo que le queda por llevar.` },
       { q: '¿Un mejor puntaje de crédito baja el pago inicial mínimo?', a: `En FHA, sí, una vez: desde ${F.minScore35} puntos el mínimo baja del ${F.minDownLowScore} % al ${F.minDown} %. Por encima ya no cambia, pero un puntaje más alto baja la tasa y el seguro hipotecario, y abre los programas estatales, que piden de 620 a 660 puntos.` },
+      { q: '¿Puede un comprador de primera vez obtener un préstamo sin pago inicial?', a: 'Sí, de tres maneras. Un préstamo de compra VA no pide entrada mientras el precio no supere el valor tasado. Un préstamo garantizado de USDA puede llegar al valor de mercado tasado en zonas rurales elegibles, con un límite de ingresos moderados. Si no, un préstamo FHA o del 3 % combinado con una ayuda estatal que pague el mínimo deja el efectivo cerca de cero.' },
     ],
     body: (h) => `
 <h2>El mínimo para cinco precios</h2>
@@ -68,6 +72,8 @@ ${h.mini('down', { p: ['p', 'l'], d: { p: 400000, l: 'conv', cs: 720 }, t: 'Su p
 <p>Un préstamo FHA no puede pasar del límite FHA del condado, ${h.m(F.floor)} en las zonas de costo bajo y hasta ${h.m(F.ceiling)} en las más caras; con el ${F.minDown} % de entrada, el precio más alto financiable con FHA en un condado en el techo ronda, por tanto, ${h.m(fhaMaxPrice)}. Un préstamo convencional por encima del límite conforme pasa a ser un préstamo jumbo, que suele pedir el 10 % o más de entrada. La página de límites de préstamo da ambos límites para cada condado.</p>
 <h2>Los regalos, la otra fuente</h2>
 <p>Los préstamos FHA y convencionales aceptan regalos de la familia para la entrada, justificados con una carta de regalo y el rastro de la transferencia. Un regalo y la ayuda estatal se pueden combinar por lo general. Lo que los prestamistas rechazan es un depósito sin justificar poco antes de la solicitud: mueva el dinero con tiempo y guarde los extractos.</p>
+<h2>Un préstamo sin pago inicial</h2>
+<p>Dos préstamos federales no piden nada de entrada. VA lo dice sin rodeos: ${h.src('va-purchase', 'sin pago inicial mientras el precio de venta no supere el valor tasado')}, para veteranos, militares y algunos cónyuges sobrevivientes elegibles, y sin seguro hipotecario mensual. El préstamo garantizado de USDA puede llegar al valor de mercado tasado de la vivienda según la ${h.src('usda-3555', 'norma 7 CFR 3555.103')}, en zonas que USDA clasifica como rurales y para hogares por debajo de su límite de ingresos moderados. Para los demás, la entrada cero se construye: un préstamo FHA al ${F.minDown} % o uno convencional al ${C.minDown} % más una ayuda estatal del 3 % al 5 % cubre el mínimo. En una casa de ${h.m(300000)} con FHA, una ayuda de ${h.m(d(300000, 'fha'))} o más deja solo los gastos de cierre por llevar, y muchos programas cubren también parte de ellos.</p>
 `,
   },
 });

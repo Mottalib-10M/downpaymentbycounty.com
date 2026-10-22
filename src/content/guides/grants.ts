@@ -22,7 +22,7 @@ export default defineGuide({
   sources: ['prog-va-grant', 'prog-co-grant', 'prog-nj-dpa', 'prog-pa-kfit', 'prog-az-homeplus'],
   en: {
     slug: 'down-payment-grants', nav: 'Down payment grants', card: 'Which programs are true grants, which are forgiven loans',
-    title: 'Down Payment Grants 2026: Real Grants vs Forgiven Loans',
+    title: 'First-Time Home Buyer Grants for Down Payment 2026',
     description: `Down payment grants in 2026: ${nGrant} true grants and ${nForg} forgivable loans among state programs, how many years you must stay, and what you owe if you sell early.`,
     h1: 'Down payment grants: which ones you never repay',
     intro: 'The calculator separates true grants from loans that are only forgiven if you keep the home long enough.',

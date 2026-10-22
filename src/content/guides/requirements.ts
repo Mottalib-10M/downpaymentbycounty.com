@@ -18,7 +18,7 @@ function table(h: Helpers) {
 
 export default defineGuide({
   id: 'requirements', group: 'tools', order: 5, tool: 'dpa', toolArg: { st: 'OH', c: oh.c.id, i: 95000, p: 240000, h: 2 },
-  related: ['first-time', 'income-limits', 'how-much-down', 'programs', 'oh', 'il'],
+  related: ['first-time', 'income-limits', 'how-much-down', 'bad-credit', 'programs', 'oh'],
   sources: ['agency-OH', 'prog-oh-dpa', 'limits-OH', 'prog-il-home', 'fha-handbook'],
   en: {
     slug: 'down-payment-assistance-requirements', nav: 'Requirements to qualify', card: 'Income, price, credit score, education and the rest, program by program',

@@ -273,6 +273,57 @@ export const SPECS: Record<string, (l: Lang, arg?: Args) => ToolSpec> = {
     },
   }),
 
+  /** Credit score → FHA minimum down payment and the state programs whose published floor the score reaches. */
+  credit: (l, arg = {}) => {
+    const st0 = String(arg.st ?? 'TX');
+    return {
+      needs: (v) => s(v, 'st'),
+      inputs: [
+        { id: 'cs', label: T(l, 'Credit score', 'Puntaje de crédito'), def: Number(arg.cs ?? 600), max: 850 },
+        stateField(l, st0),
+        priceField(l, Number(arg.p ?? 280000)),
+      ],
+      run: (v) => {
+        const st = getState(s(v, 'st'));
+        if (!st) return loading(l);
+        const cs = n(v, 'cs'), price = n(v, 'p');
+        const insured = cs >= P.fha.minScore;
+        const pct = minDownPct('fha', cs), down = price * pct / 100;
+        const at580 = price * P.fha.minDown / 100;
+        const progs = st.programs.filter((p) => p.form !== 'mcc');
+        const floors = progs.filter((p) => p.minCredit);
+        const reached = floors.filter((p) => cs >= (p.minCredit ?? 0));
+        const next = floors.filter((p) => cs < (p.minCredit ?? 0)).map((p) => p.minCredit ?? 0).sort((a, b) => a - b)[0];
+        const open = progs.filter((p) => p.status === 'open');
+        const rows: Array<[string, string, number?]> = [
+          [T(l, 'FHA minimum down payment', 'Pago inicial mínimo de FHA'), insured ? `${formatDecimal(pct, 1, l)}${l === 'es' ? ' ' : ''}%` : T(l, 'not insured', 'no asegurado')],
+          [T(l, `Down payment at ${P.fha.minScore35} or more`, `Pago inicial con ${P.fha.minScore35} o más`), m(at580, l), at580],
+          [T(l, `${st.name} programs whose floor you reach`, `Programas de ${st.name} cuyo mínimo alcanza`), `${reached.length} / ${floors.length}`],
+          [T(l, 'Points to the next state floor', 'Puntos hasta el siguiente mínimo estatal'), next ? String(next - cs) : T(l, 'none left', 'ninguno')],
+          [T(l, 'Programs with no published floor (lender decides)', 'Programas sin mínimo publicado (decide el prestamista)'), String(progs.length - floors.length)],
+        ];
+        const word = (p: (typeof progs)[number]) => p.status !== 'open' ? T(l, 'not taking applications', 'sin solicitudes ahora') : !p.minCredit ? T(l, 'no floor published: lender decides', 'sin mínimo publicado: decide el prestamista') : cs >= p.minCredit ? T(l, 'your score reaches the floor', 'su puntaje alcanza el mínimo') : T(l, `${p.minCredit - cs} points short`, `faltan ${p.minCredit - cs} puntos`);
+        return {
+          label: insured ? T(l, `FHA down payment with a ${cs} score`, `Pago inicial FHA con ${cs} puntos`) : T(l, 'FHA down payment', 'Pago inicial FHA'),
+          value: insured ? m(down, l) : '…',
+          sub: !insured
+            ? T(l, `FHA does not insure scores below ${P.fha.minScore}, and no state program we read starts that low.`, `FHA no asegura puntajes menores que ${P.fha.minScore}, y ningún programa estatal leído empieza tan bajo.`)
+            : !progs.length
+              ? T(l, `We have not yet read the ${st.name} agency's programs: only the FHA rule applies here.`, `Aún no hemos leído los programas de la agencia de ${st.name}: aquí solo vale la regla de FHA.`)
+              : T(l, `${reached.length} of the ${floors.length} ${st.name} programs with a published floor accept ${cs}; ${open.length} of ${progs.length} programs are open.`, `${reached.length} de los ${floors.length} programas de ${st.name} con mínimo publicado aceptan ${cs}; ${open.length} de ${progs.length} programas están abiertos.`),
+          rows,
+          ...(progs.length ? { table: {
+            caption: T(l, `${st.name} programs and your score`, `Programas de ${st.name} y su puntaje`),
+            headers: [T(l, 'Program', 'Programa'), T(l, 'Published floor', 'Mínimo publicado'), T(l, 'For you', 'Para usted')],
+            rows: progs.map((p) => [p.name, p.minCredit ? String(p.minCredit) : T(l, 'lender', 'prestamista'), word(p)]),
+            align: ['l', 'r', 'l'] as Array<'l' | 'r'>,
+          } } : {}),
+          note: T(l, `FHA: ${P.fha.minDown}% down from a ${P.fha.minScore35} score, ${P.fha.minDownLowScore}% from ${P.fha.minScore} to ${P.fha.minScore35 - 1} (HUD Handbook 4000.1). State floors as published by each agency; the approved lender can ask a higher score.`, `FHA: ${P.fha.minDown} % de entrada desde ${P.fha.minScore35} puntos, ${P.fha.minDownLowScore} % de ${P.fha.minScore} a ${P.fha.minScore35 - 1} (manual 4000.1 de HUD). Mínimos estatales tal como los publica cada agencia; el prestamista aprobado puede pedir más.`),
+        };
+      },
+    };
+  },
+
   /** Mortgage credit certificate, first year. */
   mcc: (l, arg = {}) => ({
     inputs: [

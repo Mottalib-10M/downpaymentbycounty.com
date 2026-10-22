@@ -102,6 +102,20 @@
         "en": "Freddie Mac, 3% down payment options (Home Possible, HomeOne)",
         "es": "Freddie Mac, opciones con 3 % de pago inicial (Home Possible, HomeOne)"
       }
+    },
+    "va-purchase": {
+      "url": "https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/",
+      "label": {
+        "en": "VA, VA-backed purchase loan (no down payment if the price does not exceed the appraised value), read October 22, 2026",
+        "es": "VA, préstamo de compra respaldado por VA (sin pago inicial si el precio no supera el valor tasado), consultado el 22 de octubre de 2026"
+      }
+    },
+    "usda-3555": {
+      "url": "https://www.ecfr.gov/current/title-7/section-3555.103",
+      "label": {
+        "en": "7 CFR 3555.103, USDA guaranteed loan: loan up to the appraised market value, read October 22, 2026",
+        "es": "7 CFR 3555.103, préstamo garantizado de USDA: préstamo hasta el valor de mercado tasado, consultado el 22 de octubre de 2026"
+      }
     }
   }
 }

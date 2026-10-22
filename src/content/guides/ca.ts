@@ -16,7 +16,7 @@ export default defineGuide({
   sources: ['agency-CA', 'prog-ca-myhome', 'prog-ca-dfa', 'hud-il', 'fha-ml'],
   en: {
     slug: 'california-down-payment-assistance', nav: 'California', card: 'CalHFA MyHome and the Dream For All loan, county by county',
-    title: 'California Down Payment Assistance 2026: CalHFA MyHome',
+    title: 'California First-Time Buyer Down Payment Assistance 2026',
     description: 'California down payment assistance in 2026: CalHFA MyHome up to 3.5% of the price, the status of Dream For All, and HUD and FHA limits for all 58 counties.',
     h1: 'California down payment assistance: CalHFA, county by county',
     intro: 'Pick your California county, income and price: what MyHome would pay, the cash you still bring, and why Dream For All is not an option right now.',

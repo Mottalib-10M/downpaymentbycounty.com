@@ -14,7 +14,7 @@ export default defineGuide({
   sources: ['hud-il', 'agency-FL', 'prog-fl-assist', 'prog-fl-hfa-plus', 'agency-OH', 'prog-oh-dpa'],
   en: {
     slug: 'down-payment-assistance-programs', nav: 'Assistance programs by state', card: 'Every state program we read, with amount, form and limits',
-    title: 'Down Payment Assistance Programs by State: 2026 Terms',
+    title: 'Down Payment Assistance Programs for First-Time Buyers 2026',
     description: `Down payment assistance programs in 2026: ${nAll} state programs with amount, form, income limit and credit floor, checked against your own county and income.`,
     h1: 'Down payment assistance programs, state by state',
     intro: 'Choose a state and a county: each program of the state agency is checked against your income, price, credit and first-time status.',
