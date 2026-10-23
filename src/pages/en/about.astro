@@ -8,13 +8,13 @@ import { HOME } from '../../content/home';
 import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
 const lang = 'en';
 const path = route('about', lang);
-const title = 'Down Payment Aid by County 2026: who publishes it and why';
-const description = 'Down Payment Aid by County is published by Radif Partners: 2026 HUD limits for every county, state programs read at the source, no email asked, no lender paid.';
+const title = 'Down Payment by County 2026: who publishes it and why';
+const description = 'Down Payment by County is published by Radif Partners: 2026 HUD limits for every county, state programs read at the source, no email asked, no lender paid.';
 const s = (k: string, t: string) => srcLink(k, lang, t);
 ---
 <PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path }])]} breadcrumbs={[{ label: 'About' }]}>
   <article class="prose prose-slate max-w-none">
-    <h1>About Down Payment Aid by County</h1>
+    <h1>About Down Payment by County</h1>
     <p>{AUTHOR_DESC.en}</p>
     <h2>Why this site exists</h2>
     <p>This site gives one answer for one household: pick a county, enter an income, a household size and a price, and it shows which state programs fit, how much each one pays, the cash left to bring and the monthly payment with and without the help. It reads every state agency's rules one by one, keeps the agency's own wording next to each figure, and dates every number it shows, so a buyer can check it with an approved lender the same day.</p>

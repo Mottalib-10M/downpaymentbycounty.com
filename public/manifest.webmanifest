@@ -1,6 +1,6 @@
 {
- "name": "Down Payment Aid by County",
- "short_name": "Down Payment Aid",
+ "name": "Down Payment by County",
+ "short_name": "DP by County",
  "description": "Down payment assistance by county: HUD 2026 income limits for every US county, state program amounts and terms, and your payment with and without help, no email.",
  "start_url": "/en/",
  "display": "standalone",

@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://us-down-payment-assistance.example/sitemap-index.xml
+Sitemap: https://downpaymentbycounty.com/sitemap-index.xml

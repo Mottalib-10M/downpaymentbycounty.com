@@ -1,6 +1,6 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://us-down-payment-assistance.example";
-export const SITE_NAMES: Record<string, string> = {"en": "Down Payment Aid by County", "es": "Ayuda para el Pago Inicial por Condado"};
+export const SITE_URL = "https://downpaymentbycounty.com";
+export const SITE_NAMES: Record<string, string> = {"en": "Down Payment by County", "es": "Pago Inicial por Condado"};
 export const LANG_TAGS: Record<string, string> = {"en": "en-US", "es": "es-US"};
 export const OG_LOCALES: Record<string, string> = {"en": "en_US", "es": "es_US"};
 export const LOCALE_TAG = 'en-US';
@@ -16,7 +16,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners loads 
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["HUD area median family income and income limits by county", "State housing finance agency down payment assistance programs", "Forgivable, deferred and amortizing second mortgages", "FHFA conforming loan limits", "First-time homebuyer definition and requirements", "Mortgage credit certificates"], "es": ["Ingreso familiar medio del área y límites de ingresos de HUD por condado", "Programas de ayuda para el pago inicial de las agencias estatales de vivienda", "Segundas hipotecas perdonables, diferidas y amortizables", "Límites de préstamo conforme de FHFA", "Definición y requisitos de comprador de vivienda por primera vez", "Certificados de crédito hipotecario"]};
-export const CONTACT_EMAIL = "contact@us-down-payment-assistance.example";
+export const CONTACT_EMAIL = "contact@downpaymentbycounty.com";
 export const THEME_COLOR = '#1D5C4D';
 export const LOGO_SYMBOL = 'DP';
 export const BING_VERIFY_CODE = '';
